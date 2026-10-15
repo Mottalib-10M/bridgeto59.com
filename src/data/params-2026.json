@@ -1,0 +1,113 @@
+{
+  "_lisezmoi": "Every rule and amount the engine and the pages use. Each value was read on the official source named in `sources` on the date of retrieved_at. Never write one of these numbers by hand in a page: read it from here (src/lib/kit.ts).",
+  "year": 2026,
+  "retrieved_at": "2026-10-15",
+  "valid_from": "2026-01-01",
+  "valid_to": "2026-12-31",
+  "early": {
+    "age": 59.5,
+    "penalty": 0.10,
+    "simpleIraFirst2Years": 0.25,
+    "ruleOf55Age": 55,
+    "publicSafetyAge": 50,
+    "publicSafetyYearsOfService": 25,
+    "planWithholding": 0.20
+  },
+  "exceptions": [
+    { "id": "separation55", "label": "Left the employer in or after the year you turned 55 (50, or 25 years of service, for qualified public safety employees)", "plan": true, "ira": false, "code": "72(t)(2)(A)(v), 72(t)(10)" },
+    { "id": "sepp", "label": "Series of substantially equal periodic payments, 72(t)", "plan": true, "ira": true, "code": "72(t)(2)(A)(iv)" },
+    { "id": "disability", "label": "Total and permanent disability", "plan": true, "ira": true, "code": "72(t)(2)(A)(iii)" },
+    { "id": "terminal", "label": "Terminal illness certified by a physician", "plan": true, "ira": true, "code": "" },
+    { "id": "medical", "label": "Unreimbursed medical expenses above 7.5% of AGI", "plan": true, "ira": true, "code": "72(t)(2)(B)" },
+    { "id": "insurance", "label": "Health insurance premiums while unemployed", "plan": false, "ira": true, "code": "72(t)(2)(D)" },
+    { "id": "education", "label": "Qualified higher education expenses", "plan": false, "ira": true, "code": "72(t)(2)(E)" },
+    { "id": "homebuyer", "label": "First-time homebuyer, up to $10,000", "plan": false, "ira": true, "code": "72(t)(2)(F)", "cap": 10000 },
+    { "id": "birth", "label": "Birth or adoption, up to $5,000 per child", "plan": true, "ira": true, "code": "72(t)(2)(H)", "cap": 5000 },
+    { "id": "emergency", "label": "Emergency personal expense, up to $1,000 once a year", "plan": true, "ira": true, "code": "72(t)(2)(I)", "cap": 1000 },
+    { "id": "abuse", "label": "Victim of domestic abuse, up to $10,000 or 50% of the account", "plan": true, "ira": true, "code": "72(t)(2)(K)", "cap": 10000 },
+    { "id": "disaster", "label": "Federally declared disaster, up to $22,000", "plan": true, "ira": true, "code": "72(t)(2)(M), 72(t)(11)", "cap": 22000 },
+    { "id": "qdro", "label": "Paid to an ex-spouse under a QDRO", "plan": true, "ira": false, "code": "72(t)(2)(C)" },
+    { "id": "levy", "label": "IRS levy of the plan or IRA", "plan": true, "ira": true, "code": "72(t)(2)(A)(vii)" },
+    { "id": "reservist", "label": "Qualified military reservist called to active duty", "plan": true, "ira": true, "code": "72(t)(2)(G)" }
+  ],
+  "tax": {
+    "brackets": {
+      "single": [[0, 0.10], [12400, 0.12], [50400, 0.22], [105700, 0.24], [201775, 0.32], [256225, 0.35], [640600, 0.37]],
+      "joint": [[0, 0.10], [24800, 0.12], [100800, 0.22], [211400, 0.24], [403550, 0.32], [512450, 0.35], [768700, 0.37]],
+      "head": [[0, 0.10], [17700, 0.12], [67450, 0.22], [105700, 0.24], [201750, 0.32], [256200, 0.35], [640600, 0.37]]
+    },
+    "standardDeduction": { "single": 16100, "joint": 32200, "head": 24150 },
+    "capitalGains": {
+      "zeroMax": { "single": 49450, "joint": 98900, "head": 66200 },
+      "fifteenMax": { "single": 545500, "joint": 613700, "head": 579600 }
+    }
+  },
+  "limits": {
+    "deferral": 24500,
+    "catchUp50": 8000,
+    "catchUp60to63": 11250,
+    "ira": 7500,
+    "iraCatchUp": 1100,
+    "annualAdditions": 72000,
+    "hsaSelf": 4400,
+    "hsaFamily": 8750,
+    "rothPhaseOut": { "single": [153000, 168000], "joint": [242000, 252000] }
+  },
+  "sepp": {
+    "floor": 0.05,
+    "share": 1.2,
+    "afr": {
+      "2026-01": { "rr": "Rev. Rul. 2026-2", "file": "rr-26-02.pdf", "mid120": 0.0457 },
+      "2026-02": { "rr": "Rev. Rul. 2026-3", "file": "rr-26-03.pdf", "mid120": 0.0463 },
+      "2026-03": { "rr": "Rev. Rul. 2026-6", "file": "rr-26-06.pdf", "mid120": 0.0472 },
+      "2026-04": { "rr": "Rev. Rul. 2026-7", "file": "rr-26-07.pdf", "mid120": 0.0459 },
+      "2026-05": { "rr": "Rev. Rul. 2026-9", "file": "rr-26-09.pdf", "mid120": 0.0491 },
+      "2026-06": { "rr": "Rev. Rul. 2026-11", "file": "rr-26-11.pdf", "mid120": 0.0497 },
+      "2026-07": { "rr": "Rev. Rul. 2026-12", "file": "rr-26-12.pdf", "mid120": 0.0523 },
+      "2026-08": { "rr": "Rev. Rul. 2026-13", "file": "rr-26-13.pdf", "mid120": 0.0523 },
+      "2026-09": { "rr": "Rev. Rul. 2026-17", "file": "rr-26-17.pdf", "mid120": 0.0540 },
+      "2026-10": { "rr": "Rev. Rul. 2026-19", "file": "rr-26-19.pdf", "mid120": 0.0554 }
+    },
+    "irsExample": { "balance": 400000, "age": 50, "rate": 0.04, "rmd": 11050, "amortization": 21102, "annuitization": 22030, "amortFactor": 18.9559, "annuityFactor": 18.1568 }
+  },
+  "aca": {
+    "medicareAge": 65,
+    "cap": 4.0,
+    "medicaidExpansion": 1.38,
+    "fpl": {
+      "2026": { "basedOn": 2025, "one": 15650, "two": 21150, "extra": 5500 },
+      "2027": { "basedOn": 2026, "one": 15960, "two": 21640, "extra": 5680 }
+    },
+    "applicable": {
+      "2026": [[0, 1.33, 0.021, 0.021], [1.33, 1.5, 0.0314, 0.0419], [1.5, 2.0, 0.0419, 0.066], [2.0, 2.5, 0.066, 0.0844], [2.5, 3.0, 0.0844, 0.0996], [3.0, 4.0, 0.0996, 0.0996]],
+      "2027": [[0, 1.33, 0.0215, 0.0215], [1.33, 1.5, 0.0323, 0.043], [1.5, 2.0, 0.043, 0.0678], [2.0, 2.5, 0.0678, 0.0866], [2.5, 3.0, 0.0866, 0.1022], [3.0, 4.0, 0.1022, 0.1022]]
+    },
+    "cobraMonths": 18,
+    "cobraMaxPremium": 1.02
+  },
+  "sources": {
+    "irs_exceptions": { "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions", "label": { "en": "IRS, Retirement topics: exceptions to tax on early distributions (updated Dec. 11, 2025)" } },
+    "irs_sepp": { "url": "https://www.irs.gov/retirement-plans/substantially-equal-periodic-payments", "label": { "en": "IRS, Substantially equal periodic payments FAQ (updated July 23, 2026)" } },
+    "notice_2022_6": { "url": "https://www.irs.gov/pub/irs-drop/n-22-06.pdf", "label": { "en": "IRS Notice 2022-6, determination of substantially equal periodic payments" } },
+    "ecfr_tables": { "url": "https://www.ecfr.gov/current/title-26/section-1.401(a)(9)-9", "label": { "en": "26 CFR 1.401(a)(9)-9, Single Life Table and mortality rates (eCFR)" } },
+    "afr_index": { "url": "https://www.irs.gov/applicable-federal-rates", "label": { "en": "IRS, Applicable federal rates (index of monthly revenue rulings)" } },
+    "rr_2026_19": { "url": "https://www.irs.gov/pub/irs-drop/rr-26-19.pdf", "label": { "en": "Rev. Rul. 2026-19, applicable federal rates for October 2026" } },
+    "rr_2026_17": { "url": "https://www.irs.gov/pub/irs-drop/rr-26-17.pdf", "label": { "en": "Rev. Rul. 2026-17, applicable federal rates for September 2026" } },
+    "pub575": { "url": "https://www.irs.gov/pub/irs-pdf/p575.pdf", "label": { "en": "IRS Publication 575 (2025), Pension and Annuity Income" } },
+    "pub590b": { "url": "https://www.irs.gov/pub/irs-pdf/p590b.pdf", "label": { "en": "IRS Publication 590-B (2025), Distributions from IRAs" } },
+    "pub590a": { "url": "https://www.irs.gov/pub/irs-pdf/p590a.pdf", "label": { "en": "IRS Publication 590-A (2025), Contributions to IRAs" } },
+    "tc558": { "url": "https://www.irs.gov/taxtopics/tc558", "label": { "en": "IRS Topic no. 558, Additional tax on early distributions from retirement plans other than IRAs" } },
+    "rp_2025_32": { "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf", "label": { "en": "Rev. Proc. 2025-32, 2026 tax brackets, standard deduction and capital gains thresholds" } },
+    "limits_2026": { "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500", "label": { "en": "IRS IR-2025-111, 2026 limits for 401(k), 403(b), 457 and IRAs" } },
+    "notice_2025_67": { "url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf", "label": { "en": "IRS Notice 2025-67, 2026 cost-of-living adjustments for retirement plans" } },
+    "rp_2025_19": { "url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf", "label": { "en": "Rev. Proc. 2025-19, 2026 HSA contribution limits" } },
+    "irc_457": { "url": "https://www.irs.gov/retirement-plans/irc-457b-deferred-compensation-plans", "label": { "en": "IRS, IRC 457(b) deferred compensation plans" } },
+    "roth_iras": { "url": "https://www.irs.gov/retirement-plans/roth-iras", "label": { "en": "IRS, Roth IRAs" } },
+    "rp_2025_25": { "url": "https://www.irs.gov/pub/irs-drop/rp-25-25.pdf", "label": { "en": "Rev. Proc. 2025-25, 2026 applicable percentage table for the premium tax credit" } },
+    "rp_2026_26": { "url": "https://www.irs.gov/pub/irs-drop/rp-26-26.pdf", "label": { "en": "Rev. Proc. 2026-26, 2027 applicable percentage table for the premium tax credit" } },
+    "hc_fpl": { "url": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/", "label": { "en": "HealthCare.gov, Federal poverty level (2025 and 2026 amounts)" } },
+    "hc_lower": { "url": "https://www.healthcare.gov/lower-costs/", "label": { "en": "HealthCare.gov, How to save with the premium tax credit" } },
+    "medicare_start": { "url": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-medicare-coverage-start", "label": { "en": "Medicare.gov, When does Medicare coverage start?" } },
+    "dol_cobra": { "url": "https://www.dol.gov/agencies/ebsa/laws-and-regulations/laws/cobra", "label": { "en": "U.S. Department of Labor, COBRA continuation coverage" } }
+  }
+}

@@ -1,0 +1,81 @@
+ficiary isn’t generally treated as an eligible rollover distri-
+bution. However, see Qualified domestic relations order 
+Publication 575 (2025) 21
+Page 22 of 46  Fileid: … cation-575/2025/a/xml/cycle03/source 9:05 - 6-Nov-2025
+The type and rule above prints on all proofs including departmental reproduction proofs. MUST be removed before printing.
+(QDRO), Rollover by surviving spouse , and Rollovers by 
+nonspouse beneficiary, later.
+Rollover of nontaxable amounts.  Y ou may be able to 
+roll over the nontaxable part of a distribution (such as your 
+after-tax contributions) made to another qualified retire-
+ment plan that is a qualified employee plan or a 403(b) 
+plan, or to a traditional or Roth IRA. The transfer must be 
+made either through a direct rollover to a qualified plan or 
+403(b) plan that separately accounts for the taxable and 
+nontaxable parts of the rollover or through a rollover to a 
+traditional or Roth IRA.
+If you roll over only part of a distribution that includes 
+both taxable and nontaxable amounts, the amount you roll 
+over is treated as coming first from the taxable part of the 
+distribution.
+Any after -tax contributions that you roll over into your 
+traditional IRA become part of your basis (cost) in your 
+IRAs. T o recover your basis when you take distributions 
+from your IRA, you must complete Form 8606, Nondeduc-
+tible IRAs, for the year of the distribution. For more infor-
+mation, see the Instructions for Form 8606.
+Withholding requirements.  If an eligible rollover distri-
+bution is paid to you, the payer must withhold 20% of it. 
+This applies even if you plan to roll over the distribution to 
+another qualified retirement plan or to an IRA. However, 
+you can avoid withholding by choosing the direct rollover 
+option, discussed later. Also, see Choosing the right op-
+tion at the end of this discussion.
+Exceptions. An eligible rollover distribution isn’t sub-
+ject to withholding to the extent it consists of NUA from 
+employer securities that can be excluded from your gross 
+income. (For a discussion of the tax treatment of a distri-
+bution of employer securities, see Figuring the T axable 
+Amount under T axation of Nonperiodic Payments, earlier.)
+In addition, withholding from an eligible rollover distribu-
+tion paid to you isn’t required if:
+• The distribution and all previous eligible rollover distri-
+butions you received during the tax year from the 
+same plan (or, at the payer’s option, from all your em-
+ployer’s plans) total less than $200; or
+• The distribution consists solely of employer securities, 
+plus cash of $200 or less instead of fractional shares.
+Direct rollover option. Y ou can choose to have any part 
+or all of an eligible rollover distribution paid directly to an-
+other qualified retirement plan that accepts rollover distri-
+butions or to a traditional or Roth IRA.
+There is an automatic rollover requirement for manda-
+tory distributions. A mandatory distribution is a distribution 
+made without your consent and before you reach age 62 
+or normal retirement age, whichever is later. The auto-
+matic rollover requirement applies if the distribution is 
+more than $1,000 and is an eligible rollover distribution. 
+Y ou can choose to have the distribution paid directly to 
+you or rolled over directly to your traditional or Roth IRA or 
+another qualified retirement plan. If you don’t make this 
+choice, the plan administrator will automatically roll over 
+the distribution into an IRA of a designated trustee or is-
+suer.
+No tax withheld.  If you choose the direct rollover op-
+tion, or have an automatic rollover, no tax will be withheld 
+from any part of the distribution that is directly paid to the 
+trustee of the other plan. If any part of the eligible rollover 
+distribution is paid to you, the payer must generally with-
+hold 20% of it for income tax.
+Payment-to-you option. If an eligible rollover distribution 
+is paid to you, 20% will generally be withheld for income 
+tax. However, the full amount is treated as distributed to 
+you even though you actually receive only 80%. Y ou must 
+generally include in income any part (including the part 
+withheld) that you don’t roll over within 60 days to another 
+qualified retirement plan or to a traditional or Roth IRA.
+If you are under age 59 1/2 when a distribution is paid to 
+you, you may have to pay a 10% tax (in addition to the reg-
+ular income tax) on the taxable part (including any tax 
+withheld) that you don’t roll over. See T ax on Early Distri-
+butions, later.

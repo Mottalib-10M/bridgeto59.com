@@ -1,0 +1,27 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'en';
+const path = route('contact', lang);
+const description = 'Write to the publisher of Bridge to 59 about a figure, a rule or a source on the early retirement calculators. E-mail only, no advice on your own case, nothing to sell.';
+---
+<PageLayout title="Contact Bridge to 59: corrections to a rule, a rate or a source" description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contact', description, path, lang })]} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Contact</h1>
+    <p>By e-mail: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. No form and no newsletter: an early retirement site that asks for an address is usually about to sell a portfolio review, and this one sells nothing.</p>
+    <h2>Messages that help</h2>
+    <ul>
+      <li>A rule or amount that differs from the IRS publication, notice or revenue ruling we cite: name the page and the paragraph of the official text.</li>
+      <li>A new monthly revenue ruling of applicable federal rates that we have not added yet to the 72(t) calculator.</li>
+      <li>A state rule on retirement distributions that has changed, with the link to the state revenue department.</li>
+      <li>Embedding the FIRE calculator on a blog or a forum: the code is on the <a href={route('widget', lang)}>embed page</a>.</li>
+    </ul>
+    <h2>What we cannot do</h2>
+    <p>We do not review personal plans, recommend investments or tell anyone whether to quit a job. For a binding answer on your plan, ask its administrator; for your tax return, a tax professional or the IRS.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+  </div>
+</PageLayout>

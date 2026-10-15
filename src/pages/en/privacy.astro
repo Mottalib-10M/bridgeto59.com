@@ -1,0 +1,28 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_URL, CLARITY_ID } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title="Privacy policy of Bridge to 59: your balances never leave the page" description="What Bridge to 59 processes: no cookie, no account, no e-mail asked; balances, ages and income are computed in your browser. Your rights under the GDPR and US state privacy laws." lang={lang} noindex={true} breadcrumbs={[{ label: 'Privacy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Privacy policy</h1>
+    <p>This policy covers {SITE_URL}. Planning an early retirement means typing your net worth, your income and your age: exactly what a lead form would like to have. This site asks for none of it to be sent anywhere. The calculations run in your browser, no cookie is set and no account exists. The publisher is established in France, so the EU General Data Protection Regulation applies to every visitor; residents of US states with a consumer privacy law keep at least the rights listed below.</p>
+    <h2>1. Controller</h2>
+    <LegalIdentity lang={lang} />
+    <h2>2. What stays on your device</h2>
+    <p>Balances, spending, ages, income and filing status are processed by the page itself. "Copy share link" writes them into the page address: anyone who receives the link can read them, so share it with care.</p>
+    <h2>3. What is processed</h2>
+    <h3>Hosting logs</h3><p>The host records the IP address, time, page and browser of each request for security. Legal basis: legitimate interest. Retention: the host's policy.</p>
+    {CLARITY_ID
+      ? <><h3>Cookie-free stability monitoring</h3><p>Microsoft Clarity (Microsoft Ireland Operations Limited) is loaded in a mode that sets no cookie; it measures errors, load times and dead clicks, with page text and every typed value masked. Legal basis: legitimate interest in a working site (Article 6(1)(f) GDPR). You can object by blocking clarity.ms or by writing to us.</p></>
+      : <><h3>No analytics</h3><p>No analytics, advertising or social script is loaded today. Before any stability tool is switched on, this page will name it and explain how to refuse it.</p></>}
+    <h3>E-mails</h3><p>If you write, we keep your address and message to answer, and delete them three years after the last exchange. Do not send account numbers or your Social Security number: we never need them.</p>
+    <h2>4. No sale, no leads</h2><p>We sell and share no personal information and pass nothing to brokers, advisers, insurers or marketers.</p>
+    <h2>5. Transfers</h2><p>The host may process request data in the United States under the EU–US Data Privacy Framework.</p>
+    <h2>6. Your rights</h2><p>Access, correction, deletion, restriction, portability and objection: write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, answer within one month. You may complain to the {LEGAL.supervisoryAuthority} (<a href={LEGAL.supervisoryAuthorityUrl} rel="nofollow noopener" target="_blank">{LEGAL.supervisoryAuthorityUrl}</a>).</p>
+    <h2>7. Children</h2><p>The site is meant for adults and collects nothing from children.</p>
+    <p>See the <a href={route('cookies', lang)}>cookies page</a> and the <a href={route('terms', lang)}>legal notice</a>. Updated: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

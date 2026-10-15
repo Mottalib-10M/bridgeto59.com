@@ -1,0 +1,150 @@
+Determination of Substantially Equal Periodic Payments
+Notice 2022- 6
+SECTION 1. PURPOSE
+ .01 This notice provides guidance on whether a series of payments from an
+individual account under a qualified retirement plan is considered a series of
+substantially equal periodic payments within the meaning of section 72(t)(2)(A)(iv) of the
+Internal Revenue Code. This guidance also applies for purposes of determining whether
+a distribution from a non- qualified annuity contract is part of a series of substantially
+equal periodic payments within the meaning of section 72(q)(2)(D). This notice modifies
+and supersedes Rev. Rul. 2002- 62, 2002- 2 CB 710, and Notice 2004-15, 2004- 1 CB
+526.
+SECTION 2. BACKGROUND
+ .01 Section 72(t) provides for an additional income tax on early withdrawals
+(which generally applies to withdrawals before age 59½) from qualified retirement plans
+(as defined in section 4974(c)). Section 4974(c) provides, in part, that the term “qualified
+retirement plan” means (1) a plan described in section 401 (including a trust exempt
+from tax under section 501(a)), (2) an annuity plan described in section 403(a), (3) a
+tax-sheltered annuity arrangement described in section 403(b), (4) an individual
+retirement account described in section 408(a), or (5) an individual retirement annuity
+described in section 408(b).
+ .02 Section 72(t)(1) provides that if a taxpayer receives any amount from a
+qualified retirement plan, the taxpayer’s income tax is increased by an amount equal to
+10% of the amount received from the qualified retirement plan that is includible in gross
+income. Section 72(t)(2) sets forth exceptions to this 10% additional tax. Under section
+72(t)(2)(A)(iv), one of the exceptions to the 10% additional tax is for distributions that
+are part of a series of substantially equal periodic payments (not less frequently than
+annually) made for the life (or life expectancy) of the employee or the joint lives (or joint
+life expectancies) of the employee and designated beneficiary.
+ .03 Pursuant to section 72(t)(5), the term “employee” includes any participant,
+and in the case of distributions from an indiv idual retirement account or annuity (IRA),
+the IRA owner is treated as an employee for purposes of applying section 72(t).
+ .04 Section 72(t)(4) provides that if a distribution is excepted from the 10%
+additional tax because the distribution is part of a series of substantially equal periodic
+payments as described in section 72(t)(2)(A)(iv) and that series of payments is
+subsequently modified (other than by reason of death, disability, or a distribution to
+which section 72(t)(10) applies) before the end of t he 5-year period beginning on the
+date of the first payment, or before the employee attains age 59½, the employee's tax
+for the first year of the modification is increased by an amount equal to the tax that, but
+for the exception in section 72(t)(2)(A)(iv) , would have been imposed, plus interest for
+the deferral period.
+ .05 Q&A-12 of Notice 89- 25, 1989- 1 CB 662, provides that payments are
+considered to be substantially equal periodic payments under section 72(t)(2)(A)(iv) if
+they are made in accordance with one of the following three methods: (1) the required
+minimum distribution method; (2) the fixed amortization method; or (3) the fixed
+annuitization method.
+ 2
+ .06 Rev. Rul. 2002- 62 restates the rule that payments are considered
+substantially equal periodic payments if they are made in accordance with one of the
+three methods provided in Q&A -12 of Notice 89- 25. Section 2.02(c) of Rev. Rul. 2002-
+62 modifies the application of the fixed amortization method and the fixed annuitization
+method by providing that th e interest rate that may be used to apply the fixed
+amortization method or the fixed annuitization method is any interest rate that is not
+greater than 120% of the federal mid- term rate (determined in accordance with section
+1274(d) for either of the two m onths immediately preceding the month in which the
+distribution begins). In addition, section 2.01(c) of Rev. Rul. 2002- 62 modifies the
+application of the fixed annuitization method by specifying the mortality table that must
+be used to apply that method.
+ .07 Section 72(q)(1) provides that if a taxpayer receives any amount under a
+non- qualified annuity contract, the taxpayer’s income tax is increased by an amount
+equal to 10% of the amount received from the non- qualified annuity contract that is
+includible in gross income. Section 72(q)(2) sets forth exceptions to this 10% additional
+tax. Under section 72(q)(2)(D), one of the exceptions to the 10% additional tax is for a
+distribution that is part of a series of substantially equal periodic payments (not less
+frequently than annually) made for the life (or life expectancy) of the taxpayer or the joint
+lives (or joint life expectancies) of the taxpayer and designated beneficiary. Section
+72(q)(3) provides rules that are generally parallel to the rules in section 72(t)(4) and
+apply if a distribution is excepted from the 10% additional tax because the distribution is
+part of a series of substantially equal periodic payments and that series of payments is
+subsequently modified.
+ 3
+ .08 Notice 2004- 15 provides that taxp ayers may use one of the methods set forth
+in Notice 89- 25, as modified by Rev. Rul. 2002- 62, to determine whether a distribution
+from a non- qualified annuity contract is part of a series of substantially equal periodic
+payments under section 72(q)(2)(D).
+ .09 Final regulations under section 401(a)(9) issued in 2020 provide new life
+expectancy tables for determining required minimum distributions that apply for
+distribution calendar years beginning on or after January 1, 2022. See Treas. Reg.
+§ 1.401(a)(9)-9, issued in T.D. 9930, 85 FR 72427 (Nov. 12, 2020).
+SECTION 3. METHODS
+ .01 General rule. Payments in a series are considered substantially equal
+periodic payments within the meaning of section 72(t)(2)(A)(iv) if they are determined in
+accordance with one of the three methods described in section 3.01(a) through (c) of
+this notice (which are based on the three methods described in Rev. Rul. 2002- 62).
+ (a) The required minimum distribution method. The annual payment for each
+distribution year is determined by dividing the account balance for that distribution year
+by the number of years from the chosen life expectancy table in section 3.02(a) of this
+notice for that distribution year. Under this method, the account balance, the number of
+years from the chosen life expectancy table, and the resulting annual payments are
+redetermined for each distribution year. This redetermination of the annual payment is
+not considered a modification of the series of substantially equal periodic payments,
+provided that the required minimum distribution method continues to be used and the
+same life expectancy tables continue to be used, except to the extent required in
+section 3.02(b) of this notice.
+ 4
+ (b) The fixed amortization method. The annual payment for each distribution year
+is determined as the amount that will result in the level amortization of the account
+balance over a specified number of years determined using the chos en life expectancy
+table under section 3.02(a) of this notice and an interest rate that is permitted pursuant
+to section 3.02(c) of this notice. Under this method, once the account balance, the
+number of years from the chosen life expectancy table, and the resulting annual
+payment are determined for the first distribution year, the annual payment is the same
+amount in each succeeding distribution year.
+ (c) The fixed annuitization method. The annual payment for each distribution year
+is determined by dividing the account balance by an annuity factor that is the present
+value of an annuity of $1 per year beginning at the employee's age and continuing for
+the life of the employee (or the joint lives of the employee and designated beneficiary).
+The annuity factor is derived using the mortality rates in § 1.401(a)(9) -9(e) and an
+interest rate that is permitted pursuant to section 3.02(c) of this notice. Under this
+method, once the account balance, the annuity factor, and the resulting annual payment
+are determined for the first distribution year, the annual payment is the same amount in
+each succeeding distribution year.
+ .02 Other rules. The following rules apply for purposes of this section 3.
+ (a) Life expectancy tables. The life expectancy tables that can be used to
+determine distribution periods under the required minimum distribution and fixed
+amortization methods are: (1) the Uniform Lifetime Table in Appendix A of this notice;
+(2) the Single Life Table in § 1.401(a)(9)-9(b); or (3) the Joint and Last Survivor Table in
+§ 1.401(a)(9)-9(d) (which can be used even if the designated beneficiary is not the
+ 5
+spouse). The number of years that is used for the required minimum distribution method
+for a distribution year is the entry from the table for the employee’s age on the
+employee’s birthday in that distribution year. If the Joint and Last Survivor Table is used,
+the age of the designated beneficiary on the designated beneficiary's birthday in the
+distribution year is also used. In the case of the required minimum dis tribution method,
+except as provided section 3.02(b) or section 4 of this notice, the same life expectancy
+table that is used for the first distribution year must be used in each following distribution
+year. Thus, if the employee uses the Single Life Table to apply the required minimum
+distribution method in the first distribution year, the Single Life Table must be used in
+subsequent distribution years. The number of years that is used to apply the fixed
+amortization method is the entry from the table for the employee's age on the
+employee’s birthday in the first distribution year (and, if applicable, the designated
+beneficiary’s age on the designated beneficiary’s birthday in that year).
+ (b) Designated beneficiary under the Joint and Last Survivor Table. If the Joint
+and Last Survivor Table in § 1.401(a)(9)-9(d) is used to apply the required minimum
+distribution method or the fixed amortization method (or if the fixed annuitization method
+is applied using an annuity factor determined for the joint lives of the employee and
+designated beneficiary), then the beneficiary whose life expectancy or expected
+mortality is used must be the actual designated beneficiary of the employee with respect
+to the account for the year of the determination. If the employee has more than one
+beneficiary, the identity and age of the designated beneficiary used for purposes of
+each of the methods described in section 3.01 of this notice are determined under the
+rules for determining the designated beneficiary for purposes of section 401(a)(9). The
+ 6
+designated beneficiary is determined for a distribution year as of January 1 of the
+distribution year, without regard to changes in the designated beneficiary later in that
+distribution year or designated beneficiary determinations in prior distribution years. For
+example, if an IRA owner starts distributions from an IRA in 2023 at age 50, and applies
+either the required minimum distribution method or fixed amortization method using the
+Joint and Last Survivor Table for the IRA owner and th e designated beneficiary, and the
+beneficiaries on January 1, 2023 are 25 and 55 years old, the number of years used to
+calculate the payment for 2023 would be 40.2 (the entry from the Joint and Last

@@ -1,0 +1,171 @@
+be excluded and the exception number shown in the Form 
+5329 instructions.
+If distribution code “1” is incorrectly shown on your 
+Form 1099-R for a distribution received when you 
+were age 59 1/2 or older, include that distribution 
+on Form 5329. Enter exception number “12” on line 2.
+General exceptions. The 10% additional tax doesn’t 
+apply to distributions that are:
+• Made as part of a series of substantially equal peri-
+odic payments (made at least annually) for your life (or 
+life expectancy) or the joint lives (or joint life expectan-
+cies) of you and your designated beneficiary (if from a 
+qualified retirement plan, the payments must begin 
+TIP
+after separation from service) (see Substantially equal 
+periodic payments, later);
+• Made because you are totally and permanently disa-
+bled (see Note, later);
+• Made to you because you have received a certification 
+that you are terminally ill; or
+• Made on or after the death of the plan participant or 
+contract holder.
+Disabled. Y ou are considered disabled if you can furnish 
+proof that you can’t do any substantial gainful activity be-
+cause of your physical or mental condition. A physician 
+must determine that your condition can be expected to re-
+sult in death or be of a long, continued, or indefinite dura-
+tion.
+Distributions to terminally ill individuals.  Y ou may be 
+able to take a distribution from a qualified retirement plan 
+before reaching age 59 1/2 and not have to pay the 10% 
+additional tax on early distributions if you receive the distri-
+bution on or after the date you have received a certifica-
+tion by a physician that you are terminally ill.
+Terminally ill individual.  Y ou are considered terminally 
+ill if you are certified by a physician as having an illness or 
+physical condition which can reasonably be expected to 
+result in death in 84 months or less after the date of the 
+certification.
+Example Recapture Allocation Chart Keep for Y our Records
+Tax year Taxable Nontaxable (basis)
+2010 Form 8606, line 23 ........  Form 8606, line 22 ...........  
+2011 Form 1040, line 16b;* Form 
+1040A, line 12b;* or Form 
+1040NR, line 17b* .........  
+Form 1040, line 16a;** Form 
+1040A, line 12a;** or Form 
+1040NR, line 17a** ...........  
+2012 Form 1040, line 16b;* Form 
+1040A, line 12b;* or Form 
+1040NR, line 17b* .........  
+Form 1040, line 16a;** Form 
+1040A, line 12a;** or Form 
+1040NR, line 17a** ...........  
+2022 Form 1040, 1040-SR, or 
+1040-NR, line 5b* .........  
+Form 1040, 1040-SR, or 
+1040-NR, line 5a** ...........  
+2023 Form 1040, 1040-SR, or 
+1040-NR, line 5b* .........  
+Form 1040, 1040-SR, or 
+1040-NR, line 5a** ...........  
+2024 Form 1040, 1040-SR, or 
+1040-NR, line 5b* .........  
+Form 1040, 1040-SR, or 
+1040-NR, line 5a** ...........  
+2025 Form 1040, 1040-SR, or 
+1040-NR, line 5b* ......... $30,000
+Form 1040, 1040-SR, or 
+1040-NR, line 5a** ........... $1,500
+Total ..................... $30,000 Total ........................ $1,500
+Note: The sum of the totals for each column should equal the amount reported in box 10 of your 2025 Form 1099-R.
+* Only include those amounts attributable to an in-plan Roth rollover.
+** Only include any contributions (usually box 5 of Form 1099-R) that were taxable to you when made and attributable to an in-plan 
+Roth rollover.
+Publication 575 (2025) 27
+Page 28 of 46  Fileid: … cation-575/2025/a/xml/cycle03/source 9:05 - 6-Nov-2025
+The type and rule above prints on all proofs including departmental reproduction proofs. MUST be removed before printing.
+Certification of terminal illness. A certification of termi-
+nal illness must include the following.
+• A statement that the individual’s illness or physical 
+condition can be reasonably expected to result in 
+death in 84 months or less after the date of certifica-
+tion.
+• A narrative description of the evidence that was used 
+to support the statement of illness or physical condi-
+tion.
+• It must include the name and contact information of 
+the physician making the statement.
+• The statement must include the date the physician ex-
+amined the individual or reviewed the evidence provi-
+ded by the individual, and the date that the physician 
+signed the certification.
+• The statement must include the signature of the physi-
+cian making the statement, and an attestation from the 
+physician that, by signing the form, the physician con-
+firms that the physician composed the narrative de-
+scription based on the physician’s examination of the 
+individual or the physician’s review of the evidence 
+provided by the individual.
+However, it is not sufficient evidence for an employee 
+who is a physician to certify the physician’s own terminal 
+illness.
+Additional exceptions for qualified retirement 
+plans. The 10% additional tax doesn’t apply to distribu-
+tions that are:
+• From a qualified retirement plan after your separation 
+from service in or after the year you reached age 55 
+(the earlier of age 50 or 25 years of service under the 
+plan for qualified public safety employees) (see Sepa-
+ration from service, later);
+• From a qualified retirement plan after your separation 
+from service in or after the year you reached the ear-
+lier of age 50 or 25 years of service under the plan if 
+you are a private sector firefighter;
+• From a qualified retirement plan to an alternate payee 
+under a QDRO;
+• From a qualified retirement plan to the extent you have 
+deductible medical expenses that exceed 7.5% of 
+your AGI, whether or not you itemize your deductions 
+for the year;
+• From an employer plan under a written election that 
+provides a specific schedule for distribution of your en-
+tire interest if, as of March 1, 1986, you had separated 
+from service and had begun receiving payments un-
+der the election;
+• From an employee stock ownership plan for dividends 
+on employer securities held by the plan;
+• From a qualified retirement plan due to an IRS levy of 
+the plan;
+• From elective deferral accounts under 401(k) or 
+403(b) plans, or similar arrangements, that are 
+qualified reservist distributions;
+• Phased retirement annuity payments made to federal 
+employees (see Pub. 721 for more information on the 
+phased retirement program);
+• From a qualified retirement plan for a qualified birth or 
+adoption (for more information, see Qualified birth or 
+adoption distributions, later);
+• Corrective distributions of the income on excess con-
+tributions distributed before the due date of the tax re-
+turn (including extensions);
+• From an applicable eligible retirement plan to victims 
+of domestic abuse (for more information, see Distribu-
+tions to victims of domestic abuse, later); or
+• From an applicable eligible retirement plan for eligible 
+emergency expenses (for more information, see Distri-
+butions for emergency personal expenses, later).
+Separation from service.  In order to meet the re-
+quirements for the first two exceptions in the list above, 
+you must have separated from service in or after the year 
+in which you reach age 55 (or the earlier of age 50 or with 
+25 years of service under the plan, whichever is earlier, for 
+qualified public safety employees and private sector fire-
+fighters).
+Y ou can’t separate from service before that year. Wait 
+until you reach the applicable age, described above, and 
+take a distribution.
+Example. George separated from service from his em-
+ployer at age 49. In the year he reached age 55, he took a 
+distribution from his retirement plan. Because he separa-
+ted from service before he reached age 55, he didn’t meet 
+the requirements for the exception for a distribution made 
+from a qualified retirement plan after separating from serv-
+ice in or after reaching age 55.
+Qualified public safety employees.  If you are a 
+qualified public safety employee, distributions that are 
+made from a governmental retirement plan may not be 
+subject to the 10% additional tax on early distributions. 
+See Certain distributions to qualified public safety employ-
+ees, later.

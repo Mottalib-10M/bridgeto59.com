@@ -1,0 +1,49 @@
+---
+/** Method: every rule, every formula, the tests, the limits. Figures from the kit. */
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { KIT as K } from '../../lib/kit';
+import { src, table } from '../../lib/helpers';
+import { breadcrumbSchema, webPageSchema } from '../../lib/seo';
+const lang = 'en';
+const path = route('method', lang);
+const P = K.P;
+const title = 'FIRE Calculator Method 2026: IRS Rules, AFR Rates, ACA Tables';
+const description = 'How the 2026 FIRE and early withdrawal calculators work: IRS brackets and exceptions, Notice 2022-6 for 72(t), monthly AFR rulings, ACA percentages, and their limits.';
+const ex = P.sepp.irsExample;
+const afr = Object.entries(P.sepp.afr).map(([m, a]) => [K.month(m), a.rr, K.pct(a.mid120, 2), K.pct(Math.max(P.sepp.floor, a.mid120), 2)]);
+const br = P.tax.brackets.single.map(([lo, r], i, a) => [K.pct(r, 0), K.usd(lo), i + 1 < a.length ? K.usd(a[i + 1][0]) : 'and up', K.usd(P.tax.brackets.joint[i][0])]);
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: 'How we calculate', description, path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'How we calculate', path }])]} breadcrumbs={[{ label: 'How we calculate' }]}>
+  <article class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>How the calculators work</h1>
+    <p>Every calculator on this site runs in your browser on one engine and one parameter file. The parameter file holds each rule and amount with the official text it comes from and the date it was read (October 15, 2026 for this edition). This page lists the rules, the formulas, the tests and what is deliberately left out.</p>
+    <h2>1. The 10 % additional tax and its exceptions</h2>
+    <p>A distribution from a qualified plan or an IRA before age 59½ owes an additional tax of {K.pct(P.early.penalty, 0)} of its taxable part (IRC section 72(t)), unless an exception applies. The engine carries the exceptions of the IRS table (<Fragment set:html={src('irs_exceptions')} />), with the accounts each one reaches and its cap: the rule of 55 applies to employer plans only, the education and first-home exceptions to IRAs only, the emergency exception up to {K.usd(1000)} a year, the birth or adoption exception up to {K.usd(5000)} per child. A governmental 457(b) owes no 10 % except on money rolled in from another plan (<Fragment set:html={src('tc558', 'Topic 558')} />). A payout from an employer plan to you is shown with the {K.pct(P.early.planWithholding, 0)} withholding of Publication 575.</p>
+    <h2>2. The rule of 55</h2>
+    <p>The test is the calendar year of separation: the year you reach {P.early.ruleOf55Age} or later, or {P.early.publicSafetyAge} or {P.early.publicSafetyYearsOfService} years of service under the plan for qualified public safety employees (<Fragment set:html={src('pub575', 'Publication 575')} />). The FIRE calculator applies it when the retirement age you test is {P.early.ruleOf55Age} or more, to the plan of your current job only.</p>
+    <h2>3. 72(t) payments</h2>
+    <p>The three methods of Notice 2022-6 (<Fragment set:html={src('notice_2022_6')} />): required minimum distribution (balance divided by life expectancy, recomputed each year), fixed amortization (level payment over the life expectancy at the chosen rate) and fixed annuitization (balance divided by the present value of $1 a year for life, using the mortality rates of 26 CFR 1.401(a)(9)-9(e)). Life expectancies come from the Single Life Table of the same section (<Fragment set:html={src('ecfr_tables', 'eCFR')} />) or the Uniform Lifetime Table of the Notice's appendix. The rate is capped at the greater of {K.pct(P.sepp.floor, 0)} and 120 % of the federal mid-term rate of either of the two months before the first payment; we use the annual-compounding column of each revenue ruling.</p>
+    <p>Test: the engine reproduces to the dollar the three examples of the IRS FAQ (<Fragment set:html={src('irs_sepp', 'irs.gov')} />): {K.usd(ex.balance)} at age {ex.age} and {K.pct(ex.rate, 0)} give {K.usd(ex.rmd)}, {K.usd(ex.amortization)} and {K.usd(ex.annuitization)}, with factors {ex.amortFactor} and {ex.annuityFactor}.</p>
+    <Fragment set:html={table(['First payment after', 'Revenue ruling', '120 % mid-term (annual)', 'Cap with the 5 % floor'], afr, 'The cap for a series uses the higher of the two months before its first payment. Index: irs.gov, applicable federal rates.', ['l', 'l', 'r', 'r'])} />
+    <h2>4. Roth IRAs</h2>
+    <p>Withdrawals follow the ordering rules of Publication 590-B: regular contributions first, free at any age; then conversions, oldest first, each free of the 10 % once five tax years have passed since January 1 of its conversion year; then earnings, taxable and penalized before 59½ (<Fragment set:html={src('pub590b')} />).</p>
+    <h2>5. Federal income tax</h2>
+    <p>2026 brackets, standard deduction ({K.usd(P.tax.standardDeduction.single)} single, {K.usd(P.tax.standardDeduction.joint)} joint) and the 0 % and 15 % thresholds for long-term gains ({K.usd(P.tax.capitalGains.zeroMax.single)} and {K.usd(P.tax.capitalGains.fifteenMax.single)} of taxable income, single) from <Fragment set:html={src('rp_2025_32', 'Rev. Proc. 2025-32')} />. Gains are stacked on ordinary income. Credits, the alternative minimum tax and the 3.8 % net investment income tax are not modeled.</p>
+    <Fragment set:html={table(['Rate', 'Single, from', 'Single, to', 'Joint, from'], br, '2026 taxable income brackets, Rev. Proc. 2025-32.', ['l', 'r', 'r', 'r'])} />
+    <h2>6. Health premiums before 65</h2>
+    <p>The premium tax credit equals the benchmark silver premium minus an expected contribution: a share of household income that rises from {K.pct(P.aca.applicable['2026'][0][2], 2)} to {K.pct(P.aca.applicable['2026'][5][3], 2)} in 2026 (<Fragment set:html={src('rp_2025_25', 'Rev. Proc. 2025-25')} />) and from {K.pct(P.aca.applicable['2027'][0][2], 2)} to {K.pct(P.aca.applicable['2027'][5][3], 2)} in 2027 (<Fragment set:html={src('rp_2026_26', 'Rev. Proc. 2026-26')} />), linear inside each band. The tables stop at 400 % of the poverty line: above it there is no credit. Poverty lines are those listed on <Fragment set:html={src('hc_fpl', 'HealthCare.gov')} /> for the 48 contiguous states and DC ({K.usd(P.aca.fpl['2026'].one)} for one person for 2026 coverage). The benchmark premium depends on age and county, so you type it from HealthCare.gov.</p>
+    <h2>7. The FIRE calculator</h2>
+    <p>Balances grow at the real return you choose, with savings added at the end of each year: first to the 401(k) up to the {K.usd(P.limits.deferral)} deferral limit, then to a Roth IRA up to {K.usd(P.limits.ira)}, the rest to a taxable account. The plain FIRE number is spending divided by the withdrawal rate. Ours adds the federal and state tax on the withdrawals needed after 59½ for your account mix (40 % of taxable withdrawals counted as long-term gains) and the present value of health premiums from the retirement age to 65. The earliest retirement age is the first age at which savings reach that number and the year-by-year bridge needs no penalized withdrawal and never runs dry before 95.</p>
+    <p>The bridge spends, before 59½: a 72(t) payment if you choose one; the 457(b) and, under the rule of 55, the last 401(k) up to the standard deduction; taxable savings; Roth contributions; conversions older than five tax years; the rest of the 457(b) and of the last 401(k); and only then, with the 10 %, IRAs and Roth earnings. A Roth ladder converts the amount you set each year until the conversions can no longer be spent before 59½. All amounts are in today's dollars, with the 2026 brackets taken as indexed.</p>
+    <h2>8. What is not modeled</h2>
+    <ul>
+      <li>Social Security, pensions and annuities: count them as a margin.</li>
+      <li>Market volatility in the main calculator: the return is constant; the sequence page shows what a bad start does.</li>
+      <li>Required minimum distributions after 73, IRMAA and Medicare premiums after 65.</li>
+      <li>State tax beyond a flat rate you type, except on the state pages, which apply each state's exclusions as read on its revenue department site.</li>
+      <li>Plan restrictions: some 401(k) plans pay former employees only a lump sum.</li>
+    </ul>
+    <p>Corrections: <a href={route('contact', lang)}>contact page</a>. These are estimates, not personal financial or tax advice.</p>
+  </article>
+</PageLayout>

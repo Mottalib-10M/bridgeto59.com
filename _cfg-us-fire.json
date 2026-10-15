@@ -1,0 +1,65 @@
+{
+ "legalCountry": "France",
+ "registerLabel": "SIREN",
+ "vatLabel": "VAT",
+ "jurisdiction": "France",
+ "supervisoryAuthority": "Commission nationale de l'informatique et des libertés (CNIL)",
+ "supervisoryAuthorityUrl": "https://www.cnil.fr",
+ "consentMode": "none",
+ "year": 2026,
+ "founded": "2026",
+ "volumes": "/Users/mottalib/Documents/GitHub/reports/volumes-2026-10-14/us-fire.csv",
+ "volumesNote": "33 requêtes mesurées au Keyword Planner le 2026-10-15 (us-retraite-anticipee-decouverte + us.txt), estimation 357 654 recherches/mois, bornes basses 113 100 : GO volume, site validé par l'éditeur le 2026-10-15.",
+ "folder": "us-fire",
+ "outDir": "a-publier/Mottalib-10M",
+ "url": "https://us-fire.example",
+ "locales": [
+  "en"
+ ],
+ "names": {
+  "en": "Bridge to 59"
+ },
+ "langTags": {
+  "en": "en-US"
+ },
+ "ogLocales": {
+  "en": "en_US"
+ },
+ "localeTag": "en-US",
+ "currency": "USD",
+ "flag": "us",
+ "symbol": "FI",
+ "accent": "#1F5C4A",
+ "authorRole": {
+  "en": "Independent publisher of early retirement calculators built on the IRS rules for reaching retirement money before 59½"
+ },
+ "authorDesc": {
+  "en": "Radif Partners turns the rules on early access to retirement money into calculators: the IRS table of exceptions to the 10 % additional tax, Publication 575 for the rule of 55, Notice 2022-6 and the monthly revenue rulings of applicable federal rates for 72(t) payments, Publication 590-B for Roth withdrawals, Rev. Proc. 2025-32 for the 2026 brackets and HealthCare.gov for the premium tax credit before Medicare. Each rule sits in one dated parameter file and the IRS worked examples run as tests. We sell no account, fund or advice and ask for no e-mail."
+ },
+ "email": "contact@us-fire.example",
+ "indexnow": "b3f17a9c52e84d06a1c9e7d24f6b8a13",
+ "shortName": "Bridge to 59",
+ "description": "FIRE calculator for the US: your number with 2026 federal tax and health premiums to 65, and which account you can reach before 59½ under the rule of 55, 72(t) or a Roth ladder.",
+ "port": 4385,
+ "og": [
+  {
+   "file": "og-en.png",
+   "title": "Your FIRE number, and how\nto reach the money before 59½",
+   "subtitle": "Rule of 55 · 72(t) · Roth ladder · ACA bridge",
+   "badge": "IRS and healthcare.gov figures, 2026",
+   "brand": "Bridge to 59"
+  }
+ ],
+ "lastUpdated": "2026-10-15",
+ "knowsAbout": {
+  "en": [
+   "FIRE number and safe withdrawal rate",
+   "Coast FIRE and Barista FIRE",
+   "Rule of 55 for 401(k) plans",
+   "72(t) substantially equal periodic payments",
+   "Roth conversion ladder and the five-year rule",
+   "10% additional tax on early distributions and its exceptions",
+   "ACA premium tax credit before Medicare"
+  ]
+ }
+}

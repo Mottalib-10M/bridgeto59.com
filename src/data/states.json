@@ -1,0 +1,484 @@
+{
+ "retrieved_at": "2026-10-15",
+ "states": {
+  "california": {
+   "name": "California",
+   "code": "CA",
+   "taxYear": 2025,
+   "rate": {
+    "kind": "progressive",
+    "topRate": 0.133,
+    "note": "2025 schedules, 1% to 12.3% plus 1% over $1 million; 2026 schedules not yet published"
+   },
+   "earlyPenalty": 0.025,
+   "exclusions": [],
+   "summary": "California taxes the withdrawal as income and adds its own 2.5 % tax before 59½ (form FTB 3805P), on top of the federal 10 %.",
+   "rules": [
+    "Early distributions (before age 59½) from qualified plans and IRAs are included in California income and subject to an additional 2.5% tax, figured on form FTB 3805P.",
+    "The 2.5% California tax is in addition to the federal 10% additional tax.",
+    "California generally follows federal exceptions to the early-distribution tax, but does not conform to all of them.",
+    "SIMPLE IRA distributions within the first two years of participation: 6% additional California tax.",
+    "No age-based state exclusion for retirement distributions."
+   ],
+   "sources": [
+    {
+     "url": "https://www.ftb.ca.gov/forms/2025/2025-3805p-instructions.html",
+     "title": "2025 Instructions for Form FTB 3805P"
+    },
+    {
+     "url": "https://www.ftb.ca.gov/forms/2025/2025-540-tax-rate-schedules.pdf",
+     "title": "2025 California Tax Rate Schedules"
+    },
+    {
+     "url": "https://www.ftb.ca.gov/forms/2025/2025-540-booklet.html",
+     "title": "2025 California Resident Income Tax Return booklet (Form 540), line 62 Behavioral Health Services Tax"
+    }
+   ]
+  },
+  "pennsylvania": {
+   "name": "Pennsylvania",
+   "code": "PA",
+   "taxYear": 2026,
+   "rate": {
+    "kind": "flat",
+    "flat": 0.0307
+   },
+   "earlyPenalty": null,
+   "exclusions": [
+    {
+     "minAge": 59.5,
+     "amount": null,
+     "covers": "IRA withdrawals with no federal early penalty, and plan payouts after the plan's retirement age or service",
+     "noPenaltyOnly": true
+    }
+   ],
+   "summary": "Pennsylvania taxes an early payout above the contributions it already taxed; after retirement under the plan's rules, and IRA money without a federal penalty, it is exempt.",
+   "rules": [
+    "Retirement benefits from an eligible Pennsylvania retirement plan paid after retirement, once the plan's age or service conditions are met, are not taxable.",
+    "Distributions before the plan's retirement age or years of service are taxable to the extent they exceed previously taxed contributions.",
+    "Employee contributions to retirement plans are taxed as compensation when made, so early distributions are taxed only above that basis (cost recovery method: basis comes out first).",
+    "IRA distributions are exempt when no federal early-withdrawal penalty is owed; otherwise taxable above previously taxed contributions."
+   ],
+   "sources": [
+    {
+     "url": "https://www.pa.gov/agencies/revenue/forms-and-publications/pa-personal-income-tax-guide/gross-compensation",
+     "title": "PA Personal Income Tax Guide - Gross Compensation"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/revenue/resources/tax-rates/personal-income-tax-rates",
+     "title": "Personal Income Tax Rates"
+    }
+   ]
+  },
+  "illinois": {
+   "name": "Illinois",
+   "code": "IL",
+   "taxYear": 2026,
+   "rate": {
+    "kind": "flat",
+    "flat": 0.0495
+   },
+   "earlyPenalty": null,
+   "exclusions": [
+    {
+     "minAge": 0,
+     "amount": null,
+     "covers": "Qualified plans, IRAs and governmental 457 plans, early distributions included"
+    }
+   ],
+   "summary": "Illinois subtracts 401(k), 403(b), IRA and governmental 457 payouts at any age, early ones included.",
+   "rules": [
+    "Illinois lets residents subtract the federally taxed portion of distributions from qualified plans (including 401(k)) and IRAs, at any age.",
+    "Early distributions from qualified plans and IRAs can be subtracted too.",
+    "Only state or local governmental 457 plans qualify; deferred compensation plans that are not government plans do not."
+   ],
+   "sources": [
+    {
+     "url": "https://tax.illinois.gov/content/dam/soi/en/web/tax/research/publications/pubs/documents/pub-120.pdf",
+     "title": "Publication 120, Retirement Income (R-12/25)"
+    },
+    {
+     "url": "https://tax.illinois.gov/content/dam/soi/en/web/tax/forms/incometax/documents/currentyear/individual/il-1040-instr.pdf",
+     "title": "2025 Form IL-1040 Instructions"
+    },
+    {
+     "url": "https://tax.illinois.gov/research/taxrates/income.html",
+     "title": "Income Tax Rates"
+    }
+   ]
+  },
+  "mississippi": {
+   "name": "Mississippi",
+   "code": "MS",
+   "taxYear": 2026,
+   "rate": {
+    "kind": "flat",
+    "flat": 0.04,
+    "note": "2026: 0 % on the first $10,000 of taxable income, 4 % above"
+   },
+   "earlyPenalty": null,
+   "exclusions": [
+    {
+     "minAge": 59.5,
+     "amount": null,
+     "covers": "Retirement income once the plan's retirement requirements are met",
+     "noPenaltyOnly": true
+    }
+   ],
+   "summary": "Mississippi exempts retirement income once you meet the plan's retirement requirements; a distribution hit by the federal early tax (Form 5329) is taxable.",
+   "rules": [
+    "Retirement income is generally exempt in Mississippi once the recipient meets the retirement plan requirements.",
+    "Early distributions are not retirement income for Mississippi and are taxable.",
+    "Pensions and annuities taxable as early or excess distributions under the Internal Revenue Code (Form 5329) do not qualify for the exemption.",
+    "Deferred compensation distributions received before the plan's retirement age and/or service requirements are taxable."
+   ],
+   "sources": [
+    {
+     "url": "https://www.dor.ms.gov/individual/individual-income-tax-faqs",
+     "title": "Individual Income Tax FAQs"
+    },
+    {
+     "url": "https://www.dor.ms.gov/individual/tax-rates",
+     "title": "Tax Rates"
+    },
+    {
+     "url": "https://www.dor.ms.gov/sites/default/files/tax-forms/individual/80100251%202.pdf",
+     "title": "2025 Form 80-100 Resident, Non-Resident and Part-Year Resident Instructions"
+    }
+   ]
+  },
+  "iowa": {
+   "name": "Iowa",
+   "code": "IA",
+   "taxYear": 2026,
+   "rate": {
+    "kind": "flat",
+    "flat": 0.038
+   },
+   "earlyPenalty": null,
+   "exclusions": [
+    {
+     "minAge": 55,
+     "amount": null,
+     "covers": "401(k), 403(b), 457(b), IRAs, SEP and SIMPLE plans, if 55 or older on December 31"
+    }
+   ],
+   "summary": "Iowa excludes retirement income from the year you are 55 on December 31; before that, payouts are taxed at the 2026 flat rate.",
+   "rules": [
+    "Since tax year 2023 Iowa excludes retirement income for taxpayers age 55 or older on December 31 of the tax year, disabled taxpayers and qualifying survivors.",
+    "Under 55 (and not disabled), retirement plan distributions are taxed at the flat 3.8% rate in 2026.",
+    "The exclusion covers 401(k), 403(b) and 457(b) plans, IRAs (traditional and Roth), SEP and SIMPLE IRAs."
+   ],
+   "sources": [
+    {
+     "url": "https://revenue.iowa.gov/taxes/tax-guidance/individual-income-tax/retirement-income-tax-guidance",
+     "title": "Retirement Income Tax Guidance"
+    },
+    {
+     "url": "https://revenue.iowa.gov/taxes/tax-guidance/individual-income-tax/1040-expanded-instructions/ia-1040-schedule-1",
+     "title": "IA 1040 Schedule 1 expanded instructions (2025)"
+    },
+    {
+     "url": "https://revenue.iowa.gov/press-release/2025-10-21/idr-announces-2026-individual-income-tax-and-interest-rates",
+     "title": "IDR Announces 2026 Individual Income Tax and Interest Rates"
+    }
+   ]
+  },
+  "colorado": {
+   "name": "Colorado",
+   "code": "CO",
+   "taxYear": 2025,
+   "rate": {
+    "kind": "progressive",
+    "topRate": null,
+    "note": "4.4 % for 2025; 2026 rate not read"
+   },
+   "earlyPenalty": null,
+   "exclusions": [
+    {
+     "minAge": 55,
+     "maxAge": 64,
+     "amount": 20000,
+     "covers": "Pension, annuity, IRA and 401(k) income not deemed premature",
+     "noPenaltyOnly": true
+    },
+    {
+     "minAge": 65,
+     "amount": 24000,
+     "covers": "Same",
+     "noPenaltyOnly": true
+    }
+   ],
+   "summary": "Colorado subtracts up to $20,000 a person from 55 to 64 and $24,000 from 65, but not a distribution the IRS treats as premature.",
+   "rules": [
+    "Colorado's pension and annuity subtraction is generally limited to taxpayers age 55 or older: up to $20,000 (age 55-64) or $24,000 (65+).",
+    "Under 55, the subtraction is only available for pension and annuity income received as a death benefit.",
+    "IRA and self-employed plan distributions deemed premature for federal tax purposes do not qualify; those not subject to the federal penalty may qualify.",
+    "For joint filers the subtraction is computed separately for each spouse."
+   ],
+   "sources": [
+    {
+     "url": "https://tax.colorado.gov/income-tax-topics-social-security-pensions-and-annuities",
+     "title": "Income Tax Topics: Social Security, Pensions and Annuities"
+    },
+    {
+     "url": "https://tax.colorado.gov/individual-income-tax-guide",
+     "title": "Individual Income Tax Guide"
+    }
+   ]
+  },
+  "new-york": {
+   "name": "New York",
+   "code": "NY",
+   "taxYear": 2025,
+   "rate": {
+    "kind": "progressive",
+    "topRate": 0.109
+   },
+   "earlyPenalty": null,
+   "exclusions": [
+    {
+     "minAge": 59.5,
+     "amount": 20000,
+     "covers": "IRA payments, periodic 401(k), 403(b) and governmental 457 payments received after 59½"
+    }
+   ],
+   "summary": "New York excludes up to $20,000 a person of pension and annuity income, only for amounts received after 59½.",
+   "rules": [
+    "New York's pension and annuity income exclusion is up to $20,000 per person, available only for amounts received after age 59½.",
+    "Lump-sum 401(k) distributions are not listed as qualifying (only periodic 401(k) distributions are); lump-sum and periodic IRA payments qualify.",
+    "Only governmental 457 plans are listed; private 457(b) plans are not.",
+    "Pensions from New York State or local governments and the federal government are subtracted separately in full on line 26."
+   ],
+   "sources": [
+    {
+     "url": "https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf",
+     "title": "Instructions for Form IT-201 (2025), lines 26 and 29"
+    }
+   ]
+  },
+  "georgia": {
+   "name": "Georgia",
+   "code": "GA",
+   "taxYear": 2026,
+   "rate": {
+    "kind": "flat",
+    "flat": 0.0499
+   },
+   "earlyPenalty": null,
+   "exclusions": [
+    {
+     "minAge": 62,
+     "maxAge": 64,
+     "amount": 35000,
+     "covers": "Retirement income, IRA and plan payouts included"
+    },
+    {
+     "minAge": 65,
+     "amount": 65000,
+     "covers": "Same"
+    }
+   ],
+   "summary": "Georgia excludes up to $35,000 a person from 62 to 64 and $65,000 from 65 (2025 booklet amounts); before 62, payouts are fully taxable.",
+   "rules": [
+    "Georgia's retirement income exclusion starts at age 62: up to $35,000 (62-64) and $65,000 (65+) per person.",
+    "Under 62 and not permanently disabled, retirement plan distributions are fully taxable in Georgia.",
+    "Each spouse must qualify separately; up to $5,000 of the exclusion may be earned income."
+   ],
+   "sources": [
+    {
+     "url": "https://dor.georgia.gov/document/document/2025-it-511-individual-income-tax-booklet/download",
+     "title": "2025 IT-511 Individual Income Tax Booklet"
+    },
+    {
+     "url": "https://dor.georgia.gov/taxes/important-tax-updates",
+     "title": "Important Tax Updates (2026 Income Tax Changes)"
+    }
+   ]
+  },
+  "new-jersey": {
+   "name": "New Jersey",
+   "code": "NJ",
+   "taxYear": 2025,
+   "rate": {
+    "kind": "progressive",
+    "topRate": 0.1075
+   },
+   "earlyPenalty": null,
+   "exclusions": [
+    {
+     "minAge": 62,
+     "amount": 75000,
+     "covers": "Single filer cap with NJ income of $100,000 or less; reduced up to $150,000, none above"
+    }
+   ],
+   "summary": "New Jersey has no exclusion before 62; from 62, up to $75,000 (single) or $100,000 (joint) if New Jersey income stays at $100,000 or less, phased out up to $150,000.",
+   "rules": [
+    "New Jersey has no state additional tax on early distributions, but no retirement exclusion before age 62 (unless blind/disabled).",
+    "401(k) contributions were not taxed by New Jersey when made, so 401(k) distributions are generally fully taxable.",
+    "Employee contributions to 403(b), 457 and other plans (other than 401(k)) were taxed by New Jersey when made and are recovered tax-free on withdrawal.",
+    "IRA contributions were generally taxed when made; earnings and amounts rolled over tax-free are taxable when withdrawn (Worksheet C).",
+    "The Three-Year Rule applies to contributory pension plans: if contributions are recovered within 36 months, payments are not taxed until contributions are recovered.",
+    "The exclusion requires New Jersey income of $150,000 or less."
+   ],
+   "sources": [
+    {
+     "url": "https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf",
+     "title": "2025 Form NJ-1040 Instructions"
+    },
+    {
+     "url": "https://www.nj.gov/treasury/taxation/njit6.shtml",
+     "title": "Pensions, Annuities and IRA Withdrawals (last updated 03/31/26)"
+    }
+   ]
+  },
+  "south-carolina": {
+   "name": "South Carolina",
+   "code": "SC",
+   "taxYear": 2026,
+   "rate": {
+    "kind": "progressive",
+    "topRate": 0.0521,
+    "note": "2026: 1.99 % under $30,000; 5.21 % minus $966 above"
+   },
+   "earlyPenalty": null,
+   "exclusions": [
+    {
+     "minAge": 0,
+     "maxAge": 64,
+     "amount": 3000,
+     "covers": "Own 401, 403, 408 and 457 plans, without the federal premature penalty",
+     "noPenaltyOnly": true
+    },
+    {
+     "minAge": 65,
+     "amount": 10000,
+     "covers": "Same",
+     "noPenaltyOnly": true
+    }
+   ],
+   "summary": "South Carolina deducts up to $3,000 of retirement income before 65 and $10,000 from 65, but not the part hit by the federal early-withdrawal penalty.",
+   "rules": [
+    "South Carolina's retirement deduction is up to $3,000 per year before age 65 and $10,000 from age 65.",
+    "Any portion of a distribution that triggered the federal premature-withdrawal penalty does not qualify for the deduction.",
+    "Qualified retirement income covers IRC 401, 403, 408 and 457 plans.",
+    "From tax year 2026, H. 4216 sets rates of 1.99% (under $30,000) and 5.21% minus $966 ($30,000 and above)."
+   ],
+   "sources": [
+    {
+     "url": "https://dor.sc.gov/sites/dor/files/forms/SC1040Instr_2025.pdf",
+     "title": "SC1040 Instructions 2025"
+    },
+    {
+     "url": "https://dor.sc.gov/tax-tips/retirees-lower-your-individual-income-tax-bill-these-five-tips",
+     "title": "Retirees - Lower your Individual Income Tax bill with these five tips"
+    },
+    {
+     "url": "https://dor.sc.gov/news/information-about-h-4216",
+     "title": "Information about H. 4216 (Apr 15, 2026)"
+    },
+    {
+     "url": "https://dor.sc.gov/iit",
+     "title": "Individual Income Tax"
+    },
+    {
+     "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/4216.htm",
+     "title": "H. 4216 bill status (Act No. 110, signed March 30, 2026)"
+    }
+   ]
+  },
+  "washington": {
+   "name": "Washington",
+   "code": "WA",
+   "taxYear": 2026,
+   "rate": {
+    "kind": "none"
+   },
+   "earlyPenalty": null,
+   "exclusions": [],
+   "summary": "Washington has no individual income tax in 2026, and retirement accounts are exempt from its capital gains excise tax.",
+   "rules": [
+    "Washington does not currently have an individual income tax, so 401(k)/IRA distributions are not taxed by the state.",
+    "Assets held in 401(k), 403(b), 457(b), IRA and Roth IRA accounts are exempt from the capital gains excise tax.",
+    "Capital gains excise tax: 7% on long-term capital gains above the standard deduction ($278,000 for 2025; $270,000 for 2024), plus an additional 2.9% on gains over $1 million from tax year 2025.",
+    "A new 9.9% income tax on adjusted gross income over $1 million takes effect January 1, 2028 (SB 6346)."
+   ],
+   "sources": [
+    {
+     "url": "https://dor.wa.gov/taxes-rates/income-tax",
+     "title": "Income tax (WA DOR)"
+    },
+    {
+     "url": "https://dor.wa.gov/taxes-rates/other-taxes/capital-gains-tax",
+     "title": "Capital gains tax"
+    },
+    {
+     "url": "https://dor.wa.gov/forms-publications/publications-subject/special-notices/new-tiered-rates-washingtons-capital-gains-tax",
+     "title": "New tiered rates for Washington's capital gains tax (June 30, 2025)"
+    },
+    {
+     "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.87.050",
+     "title": "RCW 82.87.050 (exemptions)"
+    }
+   ]
+  }
+ },
+ "noIncomeTax": {
+  "list": [
+   {
+    "name": "Alaska",
+    "code": "AK"
+   },
+   {
+    "name": "Florida",
+    "code": "FL"
+   },
+   {
+    "name": "Nevada",
+    "code": "NV"
+   },
+   {
+    "name": "South Dakota",
+    "code": "SD"
+   },
+   {
+    "name": "Texas",
+    "code": "TX"
+   },
+   {
+    "name": "Washington",
+    "code": "WA"
+   }
+  ],
+  "sources": [
+   {
+    "url": "https://tax.alaska.gov/programs/programs/reports/AnnualReport.aspx?Year=2025",
+    "title": "Alaska Tax Division annual report - historical overview"
+   },
+   {
+    "url": "https://floridarevenue.com/faq/Pages/FAQDetails.aspx?FAQID=1466",
+    "title": "Do I have to file a personal income tax return in Florida?"
+   },
+   {
+    "url": "https://tax.nv.gov/about-nevada-department-of-taxation/income-tax-in-nevada/",
+    "title": "Income Tax in Nevada"
+   },
+   {
+    "url": "https://dor.sd.gov/individuals/taxes/",
+    "title": "South Dakota DOR - Individual taxes"
+   },
+   {
+    "url": "https://comptroller.texas.gov/economy/fiscal-notes/industry/2025/small-biz-info/",
+    "title": "Texas Comptroller - Texas is open for small business (2025)"
+   },
+   {
+    "url": "https://dor.wa.gov/taxes-rates/income-tax",
+    "title": "Income tax (WA DOR)"
+   },
+   {
+    "url": "https://revenue.wyo.gov/",
+    "title": "Wyoming Department of Revenue (home)"
+   }
+  ]
+ }
+}

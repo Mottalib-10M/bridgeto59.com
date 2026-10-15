@@ -1,0 +1,30 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { route } from '../../i18n/routes';
+import { AUTHOR_NAME, AUTHOR_DESC, CONTACT_EMAIL } from '../../data/site-config';
+import { src } from '../../lib/helpers';
+import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
+const lang = 'en';
+const path = route('about', lang);
+const title = 'Bridge to 59 in 2026: who builds these early retirement tools';
+const description = 'Bridge to 59 is published by Radif Partners, an independent company: FIRE calculators that apply the IRS rules before 59½, no e-mail asked, no broker or adviser behind them.';
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path }])]} breadcrumbs={[{ label: 'About' }]}>
+  <article class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>About Bridge to 59</h1>
+    <p>{AUTHOR_DESC.en}</p>
+    <h2>The gap this site fills</h2>
+    <p>Most FIRE calculators answer one question: how many times your yearly spending you need. They multiply by 25, sometimes run a Monte Carlo simulation, and stop there. They assume every dollar is reachable on the day you leave work. It is not. Pre-tax money in a 401(k) or an IRA carries a 10 % additional tax before age 59½ unless an exception applies, health insurance has to be bought until Medicare at 65, and withdrawals are taxed. The articles that explain the rule of 55 or 72(t) payments rarely compute anything, and the calculators of fund companies end with an invitation to open an account.</p>
+    <p>This site does better than the first Google result for a FIRE calculator because its calculator does not stop at 25 times spending: it tells you at what age and in what order each account opens before 59½ (rule of 55, 72(t) at the month's AFR cap, a Roth conversion ladder, a governmental 457(b)) and adds 2026 federal tax, the 10 % penalty and health premiums until Medicare, without asking for an e-mail or selling anything.</p>
+    <h2>Who publishes it</h2>
+    <p>The site is published by {AUTHOR_NAME}, a company that builds calculators on public rules. It is not a broker, an investment adviser, an insurance agency or a plan provider, receives no commission and has no partner to send you to. Pages carry no affiliate link.</p>
+    <LegalIdentity lang={lang} />
+    <h2>What we rely on</h2>
+    <p>The IRS table of exceptions to the 10 % additional tax (<Fragment set:html={src('irs_exceptions', 'irs.gov')} />), Publications 575 and 590-B, Notice 2022-6 and the eCFR life tables for 72(t) payments, the monthly revenue rulings of applicable federal rates, Rev. Proc. 2025-32 for the 2026 brackets, HealthCare.gov and Rev. Procs. 2025-25 and 2026-26 for the premium tax credit, and the revenue departments of the states we cover.</p>
+    <h2>What the site leaves out</h2>
+    <p>Social Security benefits are not modeled: the calculators treat them as a margin. Investment returns are your assumption, not our forecast. Plan-specific rules (whether your 401(k) allows partial withdrawals after you leave, for example) are in your plan document, not in the tax code. The <a href={route('method', lang)}>method page</a> lists every formula and its limits; the <a href={route('editorial', lang)}>editorial policy</a> explains corrections.</p>
+    <h2>Contact</h2>
+    <p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, for corrections and sources. We answer questions about a rule, not about your personal situation.</p>
+  </article>
+</PageLayout>

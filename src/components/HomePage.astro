@@ -1,0 +1,58 @@
+---
+/**
+ * Home, in its own order: the FIRE calculator with the access rules first, the four doors before 59½,
+ * the folded answer, why the 25× rule falls short, the account-by-age ledger, the calculators by
+ * family, long text in accordions, FAQ. Text: src/content/home.ts.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Clamp from './Clamp.astro';
+import Tool from './Tool.astro';
+import { HOME } from '../content/home';
+import { route, ROUTES } from '../i18n/routes';
+import { GROUPS } from '../i18n/nav';
+import { helpers, SOURCES } from '../lib/helpers';
+import { GUIDES } from '../lib/pages';
+import { KIT as K } from '../lib/kit';
+import { faqSchema, organizationSchema, websiteSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+import { LAST_UPDATED } from '../data/site-config';
+const lang = 'en';
+const x = HOME;
+const path = route('home', lang);
+const h = helpers();
+const sources = x.sources.map((k) => ({ name: SOURCES[k].label, url: SOURCES[k].url }));
+const jsonLd = [websiteSchema(lang), organizationSchema(lang), webPageSchema({ name: x.h1, description: x.description, path, lang }), webApplicationSchema({ name: x.h1, description: x.description, path, lang }), faqSchema(x.faqs, lang)];
+const cap = K.maxRate(K.CAP_MONTHS[K.CAP_MONTHS.length - 1]);
+const doors = [
+  { id: 'rule-of-55', t: 'Rule of 55', d: `Leave your job in the year you turn ${K.P.early.ruleOf55Age} or later: that employer's 401(k) pays out with no 10 %.` },
+  { id: '72t-calculator', t: '72(t) payments', d: `Fixed yearly payments from an IRA at any age; up to ${K.pct(cap.rate, 2)} interest for a first payment in ${K.month(cap.month)}.` },
+  { id: 'roth-conversion-ladder', t: 'Roth ladder', d: 'Convert each year, spend each conversion five tax years later.' },
+  { id: '457b-early-withdrawal', t: '457(b)', d: 'A governmental 457(b) owes no 10 % at any age once you leave.' },
+];
+---
+<PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={x.faqs} sources={sources}>
+  <header class="mb-4">
+    <h1 class="font-serif text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{x.h1}</h1>
+    <p class="mt-2 text-base text-navy-700 sm:text-lg">{x.intro}</p>
+    <p class="mt-1 text-sm text-navy-600">2026 IRS figures, read <time datetime={LAST_UPDATED}>{K.day(LAST_UPDATED)}</time> · <a href={route('method', lang)} class="underline">How we calculate</a> · <a href={route('about', lang)} class="underline">Who publishes this</a></p>
+  </header>
+  <div data-outil data-chrome><Tool kind="fire" idPrefix="home" /></div>
+  <section data-chrome class="my-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+    {doors.filter((d) => ROUTES.some((r) => r.id === d.id)).map((d) => <a href={route(d.id, lang)} class="block rounded-lg border border-navy-200 bg-white p-3 hover:border-accent-500"><span class="block font-semibold text-navy-900">{d.t}</span><span class="mt-1 block text-sm text-navy-700">{d.d}</span></a>)}
+  </section>
+  <Clamp text={x.resume} lang={lang} id="clamp-home" class="my-8" />
+  <section class="prose prose-slate max-w-none prose-headings:font-serif"><Fragment set:html={x.why(h)} /></section>
+  <section class="mt-10" data-chrome>
+    {GROUPS.map((g) => (
+      <div class="mb-6">
+        <h2 class="font-serif text-xl font-bold text-navy-900">{g.label}</h2>
+        <ul class="mt-3 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
+          {GUIDES.filter((p) => p.group === g.id).map((p) => <li><a href={route(p.id, lang)} class="font-medium text-accent-700 underline-offset-2 hover:underline">{p.nav}</a><span class="block text-navy-600">{p.card}</span></li>)}
+        </ul>
+      </div>
+    ))}
+  </section>
+  <section class="mt-10">
+    <h2 class="font-serif text-2xl font-bold text-navy-900">Before you hand in your notice</h2>
+    {x.sections(h).map((s) => <details class="fold"><summary><h3 class="fold-h">{s.title}</h3></summary><div class="prose prose-slate max-w-none pb-4"><Fragment set:html={s.html} /></div></details>)}
+  </section>
+</PageLayout>

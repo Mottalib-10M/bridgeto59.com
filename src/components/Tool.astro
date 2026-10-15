@@ -1,0 +1,12 @@
+---
+/** The calculator of a page: FireTool for 'fire', a declarative calculator (tool-specs.ts) otherwise. */
+import FireTool from './calc/FireTool';
+import SpecTool from './calc/SpecTool';
+import { route } from '../i18n/routes';
+interface Props { kind: string; arg?: Record<string, number | string>; idPrefix?: string }
+const { kind, arg, idPrefix = 't' } = Astro.props;
+const methodHref = route('method', 'en');
+---
+{kind === 'fire'
+  ? <FireTool client:load methodHref={methodHref} idPrefix={idPrefix} ret={Number(arg?.ret ?? 0)} strategy={(arg?.strat ?? 'none') as 'none' | 'ladder' | 'sepp'} />
+  : <SpecTool client:load kind={kind} arg={arg ? JSON.stringify(arg) : undefined} methodHref={methodHref} idPrefix={idPrefix} />}

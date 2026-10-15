@@ -1,0 +1,21 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { AUTHOR_NAME, REVIEW_CYCLE_MONTHS } from '../../data/site-config';
+const lang = 'en';
+---
+<PageLayout title="Editorial policy of Bridge to 59: IRS texts, dated rates, fixes" description="How Bridge to 59 writes its early retirement pages: IRS and HealthCare.gov texts only, every amount read from a parameter file, assumptions labeled, no money from brokers or advisers." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Editorial policy</h1>
+    <h2>What counts as a source</h2>
+    <p>Rules on early distributions come from the Internal Revenue Code as the IRS explains it: its table of exceptions, Publications 575 and 590-B, Notice 2022-6 on substantially equal periodic payments and the monthly revenue rulings of applicable federal rates. Tax brackets and limits come from Rev. Proc. 2025-32 and Notice 2025-67; health coverage figures from HealthCare.gov and Rev. Procs. 2025-25 and 2026-26; state rules from each state's revenue department. Blogs, forums and brokers' articles are read to know what people ask, never as a source of a number.</p>
+    <h2>How a figure reaches a page</h2>
+    <p>No amount is typed into the text. The parameter file holds each rule with its source and the date it was read; the calculators and the pages read that file. The examples in the IRS SEPP FAQ, the bracket edges of Rev. Proc. 2025-32 and the applicable percentages of the premium tax credit are automated tests: if a parameter is mistyped, the site does not build.</p>
+    <h2>Assumptions are labeled</h2>
+    <p>Returns, inflation and withdrawal rates are not rules: they are assumptions you set, shown as such next to every result. We do not publish market forecasts.</p>
+    <h2>Independence</h2>
+    <p>{AUTHOR_NAME} receives nothing from brokers, fund companies, advisers, insurers or plan providers and links to none of them. There is no advertising today; if some is added it will be labeled, limited to three places a page, and never come from a firm selling retirement accounts or advice.</p>
+    <h2>Review and corrections</h2>
+    <p>The site is reviewed at least every {REVIEW_CYCLE_MONTHS} months, and when the IRS publishes the next year's brackets and limits (October and November), each month when a new AFR revenue ruling appears, and when HealthCare.gov opens enrollment. A reported error is checked against the source and, once fixed, moves the date shown on the page. Write through the <a href={route('contact', lang)}>contact page</a>; the calculations are explained on the <a href={route('method', lang)}>method page</a>.</p>
+  </div>
+</PageLayout>

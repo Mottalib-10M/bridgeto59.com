@@ -1,0 +1,141 @@
+ These frequently asked questions and answers provide general information and should not be cited as any type of legal authority. They provide the user with information responsive to general inquiries. Because these answers do not apply to every situation, yours may require additional research.
+ Is there an additional tax on early distributions from certain retirement plans?
+ Is there an exception to the 10% additional tax for distributions as a series of substantially equal periodic payments for life?
+ Is there specific guidance on this exception?
+ How are interest rates determined?
+ How is life expectancy determined?
+ How is the account balance determined?
+ How is annual amount determined under the three methods?
+ Can the taxpayer split the annual amount into installments during the year?
+ What happens if the taxpayer modifies a SoSEPP by taking an annual amount that is different from the annual amount determined under the method originally established?
+ After the taxpayer has received a SoSEPP payment determined under one method, can the taxpayer change to another method?
+ What is the effect of the assets being completely depleted?
+ Are these three methods the only acceptable ways of determining a SoSEPP?
+ Once the taxpayer has established a SoSEPP from an account, when does the taxpayer fulfill the SoSEPP requirements for that account?
+ Are there any other exceptions to the 10% additional tax?
+1. Is there an additional tax on early distributions from certain retirement plans?
+Yes. Under Section 72(t), there is an additional tax of 10% on distributions to the taxpayer if the distribution is made before the taxpayer is age 59 ½. This applies to distributions from qualified retirement plans, which include:
+ a plan described in Section 401(a) (which includes a trust exempt from tax under Section 501(a)),
+ an annuity plan described in Section 403(a),
+ an annuity contract described in Section 403(b),
+ an individual retirement account (“IRA”) described in Section 408(a), and
+ an individual retirement annuity described in Section 408(b).
+The 10% additional tax is determined with respect to that portion of the distribution that is includible in gross income.
+Back to top
+2. Is there an exception to the 10% additional tax for distributions as a series of substantially equal periodic payments for life?
+Yes. Under Section 72(t)(2)(A)(iv), if the distributions are determined as a series of substantially equal periodic payments (called a “SoSEPP”) over the taxpayer’s life expectancy (or over the life expectancies of the taxpayer and the taxpayer’s designated beneficiary), the 10% additional tax does not apply. However, there are certain requirements:
+ If these distributions are from any of the arrangements listed in items 1 through 3 of Q&A 1, the taxpayer must be separated from service with the employer maintaining the plan before the payments begin for this exception to apply. (This does not apply to IRAs or individual retirement annuities.)
+ Once the SoSEPP is established, the taxpayer cannot make any additions to the account, nor take any payments from the account, other than the SoSEPP payments. Changes to the account due to investment experience do not affect this prohibition against making additional contributions to the account or taking distributions from the account in addition to the annual payment under the SoSEPP.
+ The taxpayer cannot have more than one SoSEPP in effect for the account for any year.
+ The taxpayer does not modify the SoSEPP (other than by reason of death, disability, or distribution to a qualified public safety officer under Section 72(t)(10)) before the date that is the later of:
+ The 5th anniversary of the date of the first SoSEPP payment; and
+ The date the taxpayer reaches age 59 ½.
+If the taxpayer modifies the series of payments before that date, an additional recapture tax applies (see Q&A 9 for details). See Q&As 3, 10, and 11 for information regarding certain changes that are not considered modifications to a SoSEPP for this purpose.
+Back to top
+3. Is there specific guidance on this exception?
+Yes. Notice 2022-6 lists three methods the taxpayer may use in determining payments under a SoSEPP:
+ the required minimum distribution method (the “RMD method”),
+ the fixed amortization method, and
+ the fixed annuitization method.
+All three methods require the use of a life expectancy or mortality table. These tables are specified in Notice 2022-6, based on regulations that apply beginning on January 1, 2022. The second and third methods require the taxpayer to specify an interest rate to be used (with certain constraints on the permissible interest rates).
+Earlier guidance provided in Revenue Ruling 2002-62 PDF also allowed the use of the three methods above, but used earlier, pre-2022 mortality and life expectancy tables and provided different rules regarding permissible interest rates. To determine the amount of payment for a SoSEPP commencing--
+ before 2022, Revenue Ruling 2002-62 applied,
+ in 2022, the taxpayer may elect to apply the rules in either Revenue Ruling 2002-62 or Notice 2022-6, and
+ after 2022, Notice 2022-6 applies.
+Transition Rule: There is a special transition rule for a SoSEPP that was established under Revenue Ruling 2002-62 using the RMD method. Under this rule, the taxpayer may change the RMD method used to compute the SoSEPP amounts beginning with any year after 2021 by using the corresponding 2022 life expectancy or distribution period table indicated under Notice 2022-6, and this change is not considered a modification of the SoSEPP that results in the additional recapture tax imposed by Section 72(t)(4), described in Q&A 9. Once the RMD method of computing SoSEPP payments is changed in this manner, a reversion to using the earlier pre-2022 life expectancy or distribution period tables would be considered a modification of the SoSEPP and would be subject to the recapture tax imposed by Section 72(t)(4) (see Q&A 9).
+Back to top
+4. How are interest rates determined?
+The taxpayer must select an interest rate that is not more than the greater of:
+ 5%; or
+ 120% of the federal mid-term rate published in IRS Revenue Rulings (applicable federal rates) for either of the two months immediately preceding the month in which the first payment of the SoSEPP is made.
+Back to top
+5. How is life expectancy determined?
+If the taxpayer is applying the RMD method in accordance with Notice 2022-6, the taxpayer must use one of the following tables:
+ Uniform Lifetime Table in Appendix A of Notice 2022-6,
+ Single Life Table in Section 1.401(a)(9)-9(b),
+ Joint and Last Survivor Table in Section 1.401(a)(9)-9(d).
+If the taxpayer is applying the RMD method in accordance with Revenue Ruling 2002-62, the taxpayer must use the uniform lifetime table in that document, or the corresponding life expectancy tables referenced in the formerly applicable version of the regulation sections cited above:
+ Uniform Lifetime Table PDF in Appendix A of Revenue Ruling 2002-62, or
+ Single Life Table in Section 1.401(a)(9)-9, Q&A 1 as effective April 1, 2020, or
+ Joint and Last Survivor Table in Section 1.401(a)(9)-9, Q&A 3 as effective April 1, 2020.
+If the taxpayer is applying the RMD method in accordance with either Notice 2022-6 or Revenue Ruling 2002-62 using the joint life expectancy for the taxpayer and the designated beneficiary from the applicable Joint and Last Survivor Table, and the designated beneficiary dies or is eliminated (and there is no other designated beneficiary for a later year), then that individual is not taken into account for later years and the taxpayer must use the Single Life Table to determine the payment under the SoSEPP for that year.
+Back to top
+6. How is the account balance determined?
+For purposes of applying the RMD method, the account balance is determined in accordance with the rules under Section 1.401(a)(9)-5, Q&A-3, and is generally equal to the account balance as of the end of the prior calendar year.
+For purposes of applying the fixed amortization method and the fixed annuitization method, the account balance should be determined in a reasonable manner based on the facts and circumstances. For example, if the taxpayer determines the account balance as the account balance as of the last statement of the prior calendar year, plus any contributions or forfeitures allocated to the account balance since that last statement, minus any payments made since that last statement, this will be considered to be reasonable.
+Note: Each SoSEPP is determined for one single account. The taxpayer cannot combine account balances of multiple accounts to determine a combined annual SoSEPP amount. If the taxpayer has more than one account, the taxpayer may establish a separate SoSEPP from each account that the taxpayer wishes to use (consistent with the rules for each account); each SoSEPP should be managed independently.
+Back to top
+7. How is the annual amount determined under the three methods?
+The following examples show how the taxpayer can compute a SoSEPP using any of the three methods (listed in Q&A 3) with respect to the same underlying fact pattern.
+Facts:
+Bob, who turns age 50 on his birthday in 2023, is the owner of an IRA from which he would like to start taking distributions beginning in 2023. He would like to avoid the Section 72(t) 10% additional tax imposed on early distributions by taking advantage of the SoSEPP exception.
+ Bob’s IRA account balance is $400,000 as of December 31, 2022 (the last valuation date prior to the first payment), and he has made no contributions to or subtractions from the account between December 31, 2022, and the date he begins his SoSEPP.
+ Assume 120% of the applicable federal mid-term rate is 2.98%. For the fixed amortization and fixed annuitization methods, Bob chooses to use a rate of 4%, which is not greater than the 5% limit specified in Q&A 4.
+ Bob chooses to determine his SoSEPP over his own life expectancy only.
+Examples:
+1. RMD method
+Under the RMD method, a payment under a SoSEPP is determined by dividing the account balance by a life expectancy determined under Q&A 5 above, using attained age(s) in the calendar year of the distribution. A new annual amount is determined in this manner each year.
+Bob calculates his first annual amount by dividing the account balance ($400,000) by the single life expectancy (36.2) obtained from the Single Life Table, using attained age 50 ($400,000/36.2 = $11,050).
+For subsequent years, Bob will calculate the annual amount by dividing the account balance as of December 31 preceding the year the annual amount is redetermined, the single life expectancy (36.2) obtained from the Single Life Table, using his attained age as of his birthday in the calendar year during which the annual amount is redetermined. For example, if Bob's IRA account balance, after the 2023 annual amount has been paid, is $408,304 on December 31, 2023, the second annual amount is calculated by dividing the December 31, 2023 account balance ($408,304) by the single life expectancy (35.3) obtained from the Single Life Table using age 51 ($408,304/35.3 = $11,567).
+2. Fixed amortization method
+The fixed amortization method results in the level amortization of the account balance over a specified number of years determined using a permitted interest rate under Q&A 4 and life expectancy under Q&A 5. The specified number of years is equal to the life expectancy under Q&A 4 (in this case, Bob selected the Single Life Table), 36.2 years. In this case, the interest rate Bob selected was 4.0%, which satisfies the rule in Q&A 4. An amortization factor based on 36.2 years and the selected interest rate of 4.0% is equal to 18.9559. This number was computed as the present value factor of $1.00 per year payable at the end of each year for 36.2 years using an interest rate of 4.0%. Thus, the annual amount for each year is $400,000 divided by 18.9559, or $21,102. Once the annual amount is calculated and paid under this method, the same dollar amount must be distributed in subsequent years.
+3. Fixed annuitization method
+Under the fixed annuitization method, the annual payment amount under a SoSEPP is determined by dividing the account balance by an annuity factor that is the present value of $1.00 per year beginning at the taxpayer’s age and continuing for the life (or lives) of the taxpayer (or taxpayer and taxpayer’s beneficiary). The annuity factor is derived using the mortality rates in Table 4 in Section 1.401(a)(9)‑9(e), and a permitted interest rate under Q&A 4. In this case, the interest rate Bob selected was 4.0%, which satisfies the rule in Q&A 4. The annuity factor computed is 18.1568. This factor was computed as the present value factor of an annuity for the taxpayer aged 50 of $1.00 per year payable at the end of each year the taxpayer is still alive using an interest rate of 4.0%. Thus, the annual amount for each year is $400,000 divided by 18.1568, or $22,030. Once the annual amount is calculated and paid under this method, the same dollar amount must be distributed in subsequent years.
+Note: The SoSEPP is not considered to have commenced until the date the first payment is made to the taxpayer. The taxpayer should ensure that the SoSEPP commences within the calendar year for which the annual amount initially is determined.
+Back to top
+8. Can the taxpayer split the annual amount into installments during the year?
+Subject to limitations imposed by the custodian of the taxpayer’s account or trustee of a qualified retirement plan, the taxpayer may establish a preferred installment arrangement to take the annual amount required during each year. For example, under any of the three methods listed in Q&A 3, the taxpayer may choose to take the annual amount in regular annual, quarterly, or monthly installments. The taxpayer does not need to adjust the original determination of the annual amount to reflect the planned frequency of payments within each year. However, if the taxpayer takes payments of the annual amount in partial installments (rather than as a single annual payment), the taxpayer should ensure that the installments are correctly distributed during the proper annual periods so the total payments are equal to the annual amount required under the established method listed in Q&A 3.
+Note: If the taxpayer has more than one SoSEPP (that is, by having each SoSEPP made from a different account), the taxpayer cannot aggregate the total annual amounts and take such total all from one account. Each distinct SoSEPP annual amount must be distributed from the account for which each SoSEPP was originally established.
+Back to top
+9. What happens if the taxpayer modifies a SoSEPP by taking an annual amount that is different from the annual amount determined under the method originally established?
+Other than by reason of death, disability of the taxpayer, or a distribution to a qualified public safety employee under Section 72(t)(10), if the taxpayer modifies the SoSEPP by taking an annual amount that is either lesser or greater than the annual amount determined under the method of the SoSEPP as originally established by the taxpayer, the original SoSEPP is treated as no longer in effect for the year of the modification. As a result, two tax amounts apply in the year of the modification:
+ The taxpayer will be subject to the 10% additional tax under Section 72(t)(1) on the total distributions in the calendar year (to the extent those distributions are includible in gross income); and
+ The taxpayer will also be subject to a recapture tax under Section 72(t)(4) equal to the total amount of the 10% additional tax that would have been imposed under Section 72(t)(1) for the prior years of the SoSEPP (as if the SoSEPP exception had not applied), plus interest for the deferral period.
+Once the SoSEPP is treated as no longer in effect, distributions in later years cannot be treated as made under the SoSEPP as originally established in a prior year. As such, the taxpayer is not under any obligation to take the originally determined SoSEPP annual payment for those later years. However, the taxpayer may establish a new SoSEPP in a calendar year after the year of the modification, based on the age(s), account balance, and interest rate applicable with respect to the year in which the new SoSEPP begins.
+There are two events affecting a SoSEPP, described in Q&A 10 and Q&A 11, that are not treated as modifications to the original SoSEPP for purposes of the recapture tax under Section 72(t)(4). In addition, the change described in Q&A 3 under the special transition rule (i.e., using the corresponding 2022 life expectancy table under the RMD method) is not treated as a modification of the SoSEPP for purposes of the recapture tax under Section 72(t)(4).
+Back to top
+10. After the taxpayer has received a SoSEPP payment determined under one method, can the taxpayer change to another method?
+The taxpayer may change the chosen method in accordance with Notice 2022-6, only under one set of conditions. The only permitted change in method is if the taxpayer changes from one of the fixed methods under Q&A 3 (either the fixed amortization method or the fixed annuitization method) to the RMD method. This change is available one time only and is not treated as a modification of the SoSEPP that causes the taxpayer’s distributions to fall under the additional recapture tax described in Q&A 9 above.
+For example, assume Sam (who is not a public safety officer) started receiving SoSEPP payments from his IRA in annual installments in 2023 at age 52. His annual amount of $36,251, payable each December 1, was originally determined using the fixed amortization method. Sam would like to use the special rule in Notice 2022-6 allowing a one‑time change to the RMD method to determine a new annual amount beginning in 2026. For this one-time change in method, Sam determines an annual amount for 2026 using his IRA account balance on December 31, 2025 ($810,250) and a single life expectancy at age 55 (which is his age on his birthday in 2026) of 31.6 (obtained from Section 1.401(a)(9)-9(b)).
+Under the RMD method, the 2026 annual amount is $25,641 ($810,250/31.6). This becomes the method of calculating the SoSEPP and Sam must continue to use the same RMD method to determine the annual amount for subsequent years in order for the annual installments to be considered part of the original SoSEPP. Sam retains the same obligations with respect to how long the SoSEPP must continue as he had when he established the SoSEPP in 2023 (See Q&A 13).
+Any other change to the SoSEPP method (other than by reason of death or disability) will be considered a modification of the SoSEPP and will trigger the additional recapture tax described in Q&A 9.
+Back to top
+11. What is the effect of the assets being completely depleted?
+If the taxpayer completely depletes the assets in an individual account plan or an IRA with a final annual distribution that brings the account balance to $0 and is less than the required SoSEPP annual amount for the year, the taxpayer is not subject to the 10% additional tax as a result of this final annual distribution not being equal to the SoSEPP annual amount. Additionally, the recapture tax under Section 72(t)(4) does not apply. This is not considered to be a change in the method of determining the SoSEPP nor a modification of the SoSEPP.
+Back to top
+12. Are these three methods the only acceptable ways of determining a SoSEPP?
+No. The three methods described in Q&A 3 are automatically considered to satisfy the requirements of the SoSEPP exception to the 10% additional tax, but they are not the exclusive methods. Notice 2022-6 does not preclude other methods from satisfying the requirements of the SoSEPP exception.
+Back to top
+13. Once the taxpayer has established a SoSEPP from an account, when does the taxpayer fulfill the SoSEPP requirements for that account?
+The SoSEPP annual amounts must generally continue (in accordance with Q&A 2) in order for the taxpayer to avoid the additional recapture tax described in Q&A 9. For example, assume the taxpayer was born on August 15, 1968, and commenced taking SoSEPP payments on December 1, 2024, at age 56. The taxpayer may not take a distribution that is not part of the SoSEPP or modify the annual amount until December 1, 2029 (five full years after the date the SoSEPP commences), even though the taxpayer would reach age 59 ½ on February 15, 2028. Alternatively, if the same taxpayer had established a different SoSEPP (on a different account) at age 52 with annual installments commencing on December 1, 2020, the taxpayer may not take a distribution from that account that is not part of the SoSEPP or modify the annual amount until February 15, 2028, even though the fifth annual amount would be distributed on December 1, 2024.
+Back to top
+14. Are there any other exceptions to the 10% additional tax?
+Yes. See other FAQs for a list of exceptions under Section 72(t)(2).
+Back to top
+ Page Last Reviewed or Updated: 23-Jul-2026
+ ShareFacebook
+Twitter
+Linkedin
+Print
+ Footer Navigation
+ Our Agency
+ About IRS
+ Careers
+ Financial and Budget Reports
+ Tax Statistics
+ Help
+ Find a Local Office
+ Know Your Rights
+ Taxpayer Bill of Rights
+ Taxpayer Advocate Service
+ Independent Office of Appeals
+ Civil Rights 
+ FOIA
+ No FEAR Act Data
+ Reliance on Guidance
+ Resolve an Issue
+ IRS Notices and Letters
+ Identity Theft
+ Tax scams
+ Tax Fraud
+ Criminal Investigation
