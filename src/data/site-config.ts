@@ -1,5 +1,5 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://us-fire.example";
+export const SITE_URL = "https://bridgeto59.com";
 export const SITE_NAMES: Record<string, string> = {"en": "Bridge to 59"};
 export const LANG_TAGS: Record<string, string> = {"en": "en-US"};
 export const OG_LOCALES: Record<string, string> = {"en": "en_US"};
@@ -16,7 +16,7 @@ export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners turns 
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["FIRE number and safe withdrawal rate", "Coast FIRE and Barista FIRE", "Rule of 55 for 401(k) plans", "72(t) substantially equal periodic payments", "Roth conversion ladder and the five-year rule", "10% additional tax on early distributions and its exceptions", "ACA premium tax credit before Medicare"]};
-export const CONTACT_EMAIL = "contact@us-fire.example";
+export const CONTACT_EMAIL = "contact@bridgeto59.com";
 export const THEME_COLOR = '#1F5C4A';
 export const LOGO_SYMBOL = 'FI';
 export const BING_VERIFY_CODE = '';

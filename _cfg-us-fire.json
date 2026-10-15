@@ -12,7 +12,7 @@
  "volumesNote": "33 requêtes mesurées au Keyword Planner le 2026-10-15 (us-retraite-anticipee-decouverte + us.txt), estimation 357 654 recherches/mois, bornes basses 113 100 : GO volume, site validé par l'éditeur le 2026-10-15.",
  "folder": "us-fire",
  "outDir": "a-publier/Mottalib-10M",
- "url": "https://us-fire.example",
+ "url": "https://bridgeto59.com",
  "locales": [
   "en"
  ],
@@ -36,7 +36,7 @@
  "authorDesc": {
   "en": "Radif Partners turns the rules on early access to retirement money into calculators: the IRS table of exceptions to the 10 % additional tax, Publication 575 for the rule of 55, Notice 2022-6 and the monthly revenue rulings of applicable federal rates for 72(t) payments, Publication 590-B for Roth withdrawals, Rev. Proc. 2025-32 for the 2026 brackets and HealthCare.gov for the premium tax credit before Medicare. Each rule sits in one dated parameter file and the IRS worked examples run as tests. We sell no account, fund or advice and ask for no e-mail."
  },
- "email": "contact@us-fire.example",
+ "email": "contact@bridgeto59.com",
  "indexnow": "b3f17a9c52e84d06a1c9e7d24f6b8a13",
  "shortName": "Bridge to 59",
  "description": "FIRE calculator for the US: your number with 2026 federal tax and health premiums to 65, and which account you can reach before 59½ under the rule of 55, 72(t) or a Roth ladder.",
