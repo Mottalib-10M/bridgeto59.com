@@ -53,10 +53,10 @@ export default function FireTool({ methodHref, idPrefix = 'fire', ret = 0, strat
         <form className="grid content-start grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
           {NF('age', 'Your age', { unit: 'yrs', max: 80 })}
           {NF('spend', 'Yearly spending in retirement', { unit: '$', max: 5000000, help: 'Today’s dollars, health premiums apart' })}
-          {NF('taxable', 'Taxable brokerage and cash', { unit: '$', max: 100000000 })}
-          {NF('plan', '401(k) or 403(b) at your current job', { unit: '$', max: 100000000, help: 'Rule of 55 if you leave at 55 or later' })}
-          {NF('ira', 'IRAs and old employers’ 401(k)s', { unit: '$', max: 100000000 })}
-          {NF('roth', 'Roth IRA, total', { unit: '$', max: 100000000 })}
+          {NF('taxable', 'Taxable brokerage and cash', { unit: '$', max: 50000000 })}
+          {NF('plan', '401(k) or 403(b) at your current job', { unit: '$', max: 50000000, help: 'Rule of 55 if you leave at 55 or later' })}
+          {NF('ira', 'IRAs and old employers’ 401(k)s', { unit: '$', max: 50000000 })}
+          {NF('roth', 'Roth IRA, total', { unit: '$', max: 50000000 })}
           {NF('save', 'You save each year', { unit: '$', max: 5000000, help: '401(k) first, then Roth IRA, then taxable' })}
           <Choice id={`${idPrefix}-strat`} label="Bridge before 59½" value={s.strat} onChange={set('strat')} options={[{ value: 'none', label: 'None' }, { value: 'ladder', label: 'Roth ladder' }, { value: 'sepp', label: '72(t)' }]} />
           <details className="sm:col-span-2 rounded-lg border border-navy-200 px-3 py-2">
@@ -64,8 +64,8 @@ export default function FireTool({ methodHref, idPrefix = 'fire', ret = 0, strat
             <div className="mt-3 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-2">
               {NF('ret', 'Test one retirement age (0 = earliest)', { unit: 'yrs', max: 80 })}
               {NF('health', 'Health premiums per year until 65', { unit: '$', max: 200000, help: 'After any premium tax credit' })}
-              {NF('basis', 'Roth contributions inside that total', { unit: '$', max: 100000000, help: 'Free to withdraw at any age' })}
-              {NF('g457', 'Governmental 457(b)', { unit: '$', max: 100000000 })}
+              {NF('basis', 'Roth contributions inside that total', { unit: '$', max: 50000000, help: 'Free to withdraw at any age' })}
+              {NF('g457', 'Governmental 457(b)', { unit: '$', max: 50000000 })}
               {NF('conv', 'Roth ladder: converted each year', { unit: '$', max: 5000000 })}
               <SelectField id={`${idPrefix}-st`} label="Filing status" value={s.st} onChange={(x) => set('st')(x as Status)} options={[{ value: 'single', label: 'Single' }, { value: 'joint', label: 'Married filing jointly' }, { value: 'head', label: 'Head of household' }]} />
               {NF('state', 'State income tax rate', { unit: '%', max: 15, decimals: 2 })}

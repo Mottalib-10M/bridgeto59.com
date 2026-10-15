@@ -70,7 +70,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
   coast: () => ({
     inputs: [
       { id: 'age', label: 'Your age', def: 32, unit: 'yrs', max: 90 }, { id: 'ret', label: 'Age you want to retire', def: 60, unit: 'yrs', max: 90 },
-      { id: 'spend', label: 'Yearly spending in retirement', def: 50000, unit: '$', max: 5000000 }, { id: 'bal', label: 'Invested today', def: 120000, unit: '$', max: 100000000 },
+      { id: 'spend', label: 'Yearly spending in retirement', def: 50000, unit: '$', max: 5000000 }, { id: 'bal', label: 'Invested today', def: 120000, unit: '$', max: 50000000 },
       { id: 'c', label: 'You add each year until coasting', def: 15000, unit: '$', max: 5000000 }, swrIn(), rIn(5, false),
     ],
     run: (v) => {
@@ -86,7 +86,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
   barista: () => ({
     inputs: [
       { id: 'spend', label: 'Yearly spending', def: 55000, unit: '$', max: 5000000 }, { id: 'pt', label: 'Part-time pay after tax', def: 24000, unit: '$', max: 5000000 },
-      { id: 'bal', label: 'Invested today', def: 350000, unit: '$', max: 100000000 }, { id: 'c', label: 'You add each year', def: 20000, unit: '$', max: 5000000 },
+      { id: 'bal', label: 'Invested today', def: 350000, unit: '$', max: 50000000 }, { id: 'c', label: 'You add each year', def: 20000, unit: '$', max: 5000000 },
       swrIn(), rIn(),
     ],
     run: (v) => {
@@ -114,7 +114,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
   /* 4 % rule */
   swr: () => ({
     inputs: [
-      { id: 'p', label: 'Portfolio at retirement', def: 1250000, unit: '$', max: 100000000, wide: true }, { id: 'w', label: 'Yearly withdrawal', def: 50000, unit: '$', max: 10000000 },
+      { id: 'p', label: 'Portfolio at retirement', def: 1250000, unit: '$', max: 50000000, wide: true }, { id: 'w', label: 'Yearly withdrawal', def: 50000, unit: '$', max: 10000000 },
       rIn(4, false),
     ],
     run: (v) => {
@@ -127,7 +127,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
   /* Sequence of returns */
   sequence: () => ({
     inputs: [
-      { id: 'p', label: 'Portfolio at retirement', def: 1000000, unit: '$', max: 100000000 }, { id: 'w', label: 'Yearly withdrawal', def: 45000, unit: '$', max: 10000000 },
+      { id: 'p', label: 'Portfolio at retirement', def: 1000000, unit: '$', max: 50000000 }, { id: 'w', label: 'Yearly withdrawal', def: 45000, unit: '$', max: 10000000 },
       { id: 'avg', label: 'Average return after inflation', def: 5, unit: '%', max: 15, decimals: 1 }, { id: 'c', label: 'Return in each bad year', def: -20, unit: '%', max: 0, decimals: 1, help: 'A negative number' },
       { id: 'k', label: 'Number of bad years', def: 2, unit: 'yrs', max: 10 }, { id: 'h', label: 'Years in retirement', def: 35, unit: 'yrs', max: 60, adv: true },
     ],
@@ -140,7 +140,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
   /* When can I retire */
   when: () => ({
     inputs: [
-      { id: 'age', label: 'Your age', def: 35, unit: 'yrs', max: 90 }, { id: 'bal', label: 'Invested today', def: 200000, unit: '$', max: 100000000 },
+      { id: 'age', label: 'Your age', def: 35, unit: 'yrs', max: 90 }, { id: 'bal', label: 'Invested today', def: 200000, unit: '$', max: 50000000 },
       { id: 'c', label: 'You save each year', def: 30000, unit: '$', max: 5000000 }, { id: 'spend', label: 'Yearly spending in retirement', def: 60000, unit: '$', max: 5000000 },
       swrIn(), rIn(),
     ],
@@ -185,7 +185,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
   /* How long will my money last */
   lasts: () => ({
     inputs: [
-      { id: 'p', label: 'Savings', def: 800000, unit: '$', max: 100000000, wide: true }, { id: 'w', label: 'Yearly withdrawal', def: 48000, unit: '$', max: 10000000 }, rIn(4, false),
+      { id: 'p', label: 'Savings', def: 800000, unit: '$', max: 50000000, wide: true }, { id: 'w', label: 'Yearly withdrawal', def: 48000, unit: '$', max: 10000000 }, rIn(4, false),
     ],
     run: (v) => {
       const p = n(v, 'p'), w = n(v, 'w'), r = n(v, 'r') / 100;
@@ -214,7 +214,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
   /* 72(t) payment */
   sepp: () => ({
     inputs: [
-      { id: 'b', label: 'IRA balance used for the series', def: 500000, unit: '$', max: 100000000, wide: true },
+      { id: 'b', label: 'IRA balance used for the series', def: 500000, unit: '$', max: 50000000, wide: true },
       { kind: 'select', id: 'by', label: 'Year you were born', def: '1976', options: YEARS_BIRTH }, { kind: 'select', id: 'bm', label: 'Birth month', def: '6', options: MONTHS.map((m, i) => ({ value: String(i + 1), label: m })) },
       { kind: 'select', id: 'm', label: 'Month of the first payment', def: CAP_MONTHS[CAP_MONTHS.length - 1], options: CAP_MONTHS.map((x) => ({ value: x, label: monthName(x) })) },
       { kind: 'select', id: 'me', label: 'Method', def: 'amortization', options: (['amortization', 'annuitization', 'rmd'] as Method[]).map((x) => ({ value: x, label: METHOD_LABEL[x] })) },
@@ -238,7 +238,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
   /* 72(t) highest rate by month */
   seppRate: () => ({
     inputs: [{ kind: 'select', id: 'm', label: 'Month of the first payment', def: CAP_MONTHS[CAP_MONTHS.length - 1], options: CAP_MONTHS.map((x) => ({ value: x, label: monthName(x) })), wide: true },
-      { id: 'b', label: 'Account balance', def: 400000, unit: '$', max: 100000000 }, { id: 'age', label: 'Your age that year', def: 50, unit: 'yrs', max: 59 }],
+      { id: 'b', label: 'Account balance', def: 400000, unit: '$', max: 50000000 }, { id: 'age', label: 'Your age that year', def: 50, unit: 'yrs', max: 59 }],
     run: (v) => {
       const cap = maxRate(s(v, 'm'));
       const rows = cap.months.map((m) => ('missing' in m ? [`120 % mid-term, ${monthName(m.month)}`, 'not published'] : [`120 % mid-term, ${monthName(m.month)} (${m.rr})`, pct(m.mid120, 2)]) as [string, string]);
@@ -359,8 +359,8 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
   /* Bridge years to 59½ */
   bridgeYears: () => ({
     inputs: [{ id: 'age', label: 'Age you stop working', def: 48, unit: 'yrs', max: 59 }, { id: 'sp', label: 'Yearly spending with health', def: 55000, unit: '$', max: 5000000 },
-      { id: 't', label: 'Taxable brokerage and cash', def: 250000, unit: '$', max: 100000000 }, { id: 'rb', label: 'Roth IRA contributions', def: 60000, unit: '$', max: 100000000 },
-      { id: 'g', label: 'Governmental 457(b)', def: 0, unit: '$', max: 100000000 }, rIn(4)],
+      { id: 't', label: 'Taxable brokerage and cash', def: 250000, unit: '$', max: 50000000 }, { id: 'rb', label: 'Roth IRA contributions', def: 60000, unit: '$', max: 50000000 },
+      { id: 'g', label: 'Governmental 457(b)', def: 0, unit: '$', max: 50000000 }, rIn(4)],
     run: (v) => {
       const need = Math.max(0, EARLY - n(v, 'age')), r = n(v, 'r') / 100;
       const have = n(v, 't') + n(v, 'rb') + n(v, 'g');
