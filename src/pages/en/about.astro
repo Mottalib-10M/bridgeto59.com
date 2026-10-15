@@ -7,8 +7,8 @@ import { src } from '../../lib/helpers';
 import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
 const lang = 'en';
 const path = route('about', lang);
-const title = 'Bridge to 59 in 2026: who builds these early retirement tools';
-const description = 'Bridge to 59 is published by Radif Partners, an independent company: FIRE calculators that apply the IRS rules before 59½, no e-mail asked, no broker or adviser behind them.';
+const title = 'Bridge to 59 in 2026: who builds these retirement tools';
+const description = 'Bridge to 59 is published by Radif Partners: FIRE calculators that apply the IRS rules before 59½, with no e-mail asked and no broker or adviser behind them.';
 ---
 <PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path }])]} breadcrumbs={[{ label: 'About' }]}>
   <article class="prose prose-slate max-w-none prose-headings:font-serif">

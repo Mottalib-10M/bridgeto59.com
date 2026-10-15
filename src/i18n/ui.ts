@@ -9,6 +9,6 @@ const en = {
   footerPopular: 'State tax on early withdrawals',
   notFound: 'This address leads nowhere. The FIRE calculator on the home page works out when you can stop working once tax, health premiums and the 59½ rules are counted.',
   readMore: 'Read the full answer',
-  estimate: 'Results are estimates from the 2026 federal rules and the assumptions you type (returns, spending, state rate). They are not personal financial, tax or investment advice; a plan administrator or tax professional can confirm your own case. We receive nothing from any broker, plan or adviser.',
+  estimate: 'Results are estimates from the 2026 federal rules and the assumptions you type (returns, spending, state rate). This is not financial advice, nor tax or investment advice for your own case; a plan administrator or tax professional can confirm your own case. We receive nothing from any broker, plan or adviser.',
 };
 export function t(_lang: Locale) { return en; }

@@ -16,7 +16,7 @@ const pen = K.pct(E.penalty, 0);
 
 export const HOME = {
   title: 'FIRE Calculator 2026: Retire Early With the 59½ Rules',
-  description: `FIRE calculator 2026 with what others skip: federal tax, health premiums to 65 and the ${pen} penalty before 59½, plus rule of 55, 72(t) and Roth ladder. No e-mail.`,
+  description: `FIRE calculator 2026 with what others skip: federal tax, health premiums to 65 and the ${pen} penalty before 59½, plus rule of 55, 72(t) and Roth ladder.`,
   h1: 'FIRE calculator: when you can retire early, with the 59½ rules counted',
   intro: 'Your FIRE number with tax and health insurance until Medicare, and the earliest age at which your money is both large enough and reachable without the 10 % penalty.',
   resume: `A FIRE number is usually spending divided by a 4 % withdrawal rate, 25 times what you spend. That is where most calculators stop, and it leaves three costs out. Withdrawals from a 401(k) or a traditional IRA are taxed: on ${K.usd(60000)} of spending with most savings pre-tax, a single filer needs about ${K.usd(q.taxYear)} more each year for federal tax in 2026, which adds ${K.usd(q.tax)} to the target. Health insurance has to be bought until Medicare at ${K.P.aca.medicareAge}: twenty years of a ${K.usd(7200)} premium is worth ${K.usd(q.health)} at the start. And money in pre-tax accounts carries a ${pen} additional tax before age 59½ unless the rule of 55, a 72(t) series, a Roth conversion ladder or a governmental 457(b) opens it. The calculator above applies those rules year by year. With its default figures, the plain 25× rule says age ${run.classicAge}; once tax, health and access are counted, the answer is ${run.rulesAge}.`,

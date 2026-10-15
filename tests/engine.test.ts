@@ -191,6 +191,12 @@ describe('FIRE plan with access rules', () => {
     expect(b.seppPayment).toBeGreaterThan(60000);
     expect(b.penalty).toBe(0);
   });
+  it('an IRA under a 72(t) series pays nothing else before the lock ends', () => {
+    const p: PlanIn = { ...base, taxable: 0, roth: 0, rothBasis: 0, plan: 0, ira: 600000, saveTaxable: 0, saveRoth: 0, savePlan: 0, strategy: 'sepp' };
+    const b = bridge(p, 45);
+    expect(b.rows[0].src.I ?? 0).toBe(0);
+    expect(b.ok).toBe(false);
+  });
   it('rule of 55: leaving at 55 opens the last 401(k)', () => {
     const p: PlanIn = { ...base, taxable: 0, roth: 0, rothBasis: 0, ira: 0, plan: 2000000, saveTaxable: 0, saveRoth: 0 };
     expect(bridge(p, 55).penalty).toBe(0);

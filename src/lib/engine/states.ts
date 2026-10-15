@@ -9,7 +9,7 @@ import P from '../../data/params-2026.json';
 export interface Exclusion { minAge: number; maxAge?: number | null; amount?: number | null; covers: string; noPenaltyOnly?: boolean }
 export interface StateRule {
   name: string; code: string; taxYear: number;
-  rate: { kind: 'flat' | 'progressive' | 'none'; flat?: number | null; topRate?: number | null; note?: string };
+  rate: { kind: 'flat' | 'progressive' | 'none'; flat?: number | null; topRate?: number | null; note?: string; /** taxable income taxed at 0 % (Mississippi), assuming no other income */ zeroBand?: number };
   earlyPenalty?: number | null; exclusions: Exclusion[]; earlyTaxable?: boolean; summary: string;
   rules: string[]; sources: Array<{ url: string; title: string }>;
 }
@@ -28,5 +28,5 @@ export function stateTax(slug: string, amount: number, age: number, userRate = 0
   const taxed = a - excluded;
   const rate = userRate > 0 ? userRate : st.rate.kind === 'flat' ? st.rate.flat ?? null : null;
   const early = fedPenalty && age < P.early.age && st.earlyPenalty ? a * st.earlyPenalty : 0;
-  return { name: st.name, excluded, taxed, rate, early, total: taxed * (rate ?? 0) + early, note: st.summary, exclusion: ex };
+  return { name: st.name, excluded, taxed, rate, early, total: Math.max(0, taxed - (userRate > 0 ? 0 : st.rate.zeroBand ?? 0)) * (rate ?? 0) + early, note: st.summary, exclusion: ex };
 }

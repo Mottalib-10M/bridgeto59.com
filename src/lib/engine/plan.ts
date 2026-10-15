@@ -99,6 +99,8 @@ export function bridge(p: PlanIn, retireAge: number): Bridge {
     const seasoned = b.conv.filter((c) => a >= c.age + 5);
     const seasonedAmt = seasoned.reduce((x, c) => x + c.amt, 0);
     const plFree = !early || rule55;
+    // An IRA carrying a 72(t) series cannot pay anything else until the lock ends (Notice 2022-6, modification).
+    const iraLocked = seppOn && a < seppEnd;
     // Draw `want` dollars of cash in the order of the rules; returns the plan without touching balances.
     const draw = (want: number) => {
       const src: Record<string, number> = {};
@@ -109,10 +111,10 @@ export function bridge(p: PlanIn, retireAge: number): Bridge {
       if (early) {
         take('G', room); if (plFree) take('PL', Math.max(0, room - (src.G ?? 0)));
         take('T'); take('RB'); take('CV'); take('G'); if (plFree) take('PL');
-        take('I'); if (!plFree) take('PL'); take('RE');
+        if (!iraLocked) take('I'); if (!plFree) take('PL'); take('RE');
       } else {
-        take('PL', room); take('I', Math.max(0, room - (src.PL ?? 0))); take('G', Math.max(0, room - (src.PL ?? 0) - (src.I ?? 0)));
-        take('T'); take('PL'); take('I'); take('G'); take('RB'); take('CV'); take('RE');
+        take('PL', room); if (!iraLocked) take('I', Math.max(0, room - (src.PL ?? 0))); take('G', Math.max(0, room - (src.PL ?? 0) - (src.I ?? 0)));
+        take('T'); take('PL'); if (!iraLocked) take('I'); take('G'); take('RB'); take('CV'); take('RE');
       }
       const ordinary = conv + s + (src.PL ?? 0) + (src.I ?? 0) + (src.G ?? 0);
       const reTaxable = early ? (src.RE ?? 0) : 0;

@@ -114,7 +114,8 @@
    "rate": {
     "kind": "flat",
     "flat": 0.04,
-    "note": "2026: 0 % on the first $10,000 of taxable income, 4 % above"
+    "note": "2026: 0 % on the first $10,000 of taxable income, 4 % above",
+    "zeroBand": 10000
    },
    "earlyPenalty": null,
    "exclusions": [

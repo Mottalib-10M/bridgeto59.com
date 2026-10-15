@@ -78,7 +78,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
       const need = coast(target, n(v, 'age'), n(v, 'ret'), r);
       const at = coastAge(target, n(v, 'bal'), n(v, 'c'), n(v, 'age'), n(v, 'ret'), r);
       const ok = n(v, 'bal') >= need;
-      return { label: ok ? 'You have reached Coast FIRE' : 'Coast FIRE number today', value: usd(need), sub: ok ? `${usd(n(v, 'bal') - need)} above it: saving can stop and the money still grows to ${usd(target)} by ${n(v, 'ret')}.` : `${usd(need - n(v, 'bal'))} to go. At your saving pace you coast from age ${at ?? 'never before ' + n(v, 'ret')}.`,
+      return { label: ok ? 'You have reached Coast FIRE' : 'Coast FIRE number today', value: usd(need), sub: ok ? `${usd(n(v, 'bal') - need)} above it: saving can stop and the money still grows to ${usd(target)} by ${n(v, 'ret')}.` : `${usd(need - n(v, 'bal'))} to go. ${at === null ? `At your saving pace you do not reach it before ${n(v, 'ret')}.` : `At your saving pace you can coast from age ${at}.`}`,
         rows: [['FIRE number at retirement', usd(target)], ['Needed today to coast', usd(need)], ['Age you can stop saving', at === null ? 'not before retiring' : String(at)], [n(v, 'ret') < EARLY ? 'Retiring before 59½: plan the access' : 'Retiring after 59½', n(v, 'ret') < EARLY ? 'see the bridge' : 'no 10 %']] };
     },
   }),
@@ -342,7 +342,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
       { kind: 'select', id: 'fy', label: 'Year of your first Roth IRA contribution', def: '2015', options: Array.from({ length: 20 }, (_, i) => ({ value: String(2008 + i), label: String(2008 + i) })), adv: true }],
     run: (v) => {
       const r = rothWithdrawal({ contributions: n(v, 'c'), conversions: [{ year: Number(s(v, 'cy')), amount: n(v, 'cv') }], earnings: n(v, 'e'), amount: n(v, 'amt'), year: P.year, age: n(v, 'age'), firstRothYear: Number(s(v, 'fy')) });
-      return { label: r.penalty > 0 ? '10 % additional tax' : 'Tax and penalty on this withdrawal', value: usd(r.penalty + (r.taxable > 0 ? 0 : 0)), sub: `${usd(r.taxable)} is taxable income${r.qualified ? ' (qualified distribution: nothing is)' : ''}.`,
+      return { label: r.penalty > 0 ? '10 % additional tax' : 'Tax and penalty on this withdrawal', value: usd(r.penalty), sub: `${usd(r.taxable)} is taxable income${r.qualified ? ' (qualified distribution: nothing is)' : ''}.`,
         rows: r.pieces.map((p) => [p.from, `${usd(p.amount)}${p.penalty ? ' · 10 %' : ''}${p.taxable ? ' · taxed' : ''}`, p.amount] as [string, string, number]) };
     },
   }),
@@ -366,7 +366,7 @@ export const SPECS: Record<string, (arg?: Record<string, number | string>) => To
       const have = n(v, 't') + n(v, 'rb') + n(v, 'g');
       const covered = lasts(have, n(v, 'sp'), r);
       const cov = covered === null ? 100 : covered;
-      let pv = 0; for (let k = 0; k < Math.ceil(need); k++) pv += n(v, 'sp') / Math.pow(1 + r, k);
+      let pv = 0; for (let k = 0; k < Math.ceil(need); k++) pv += (n(v, 'sp') * Math.min(1, need - k)) / Math.pow(1 + r, k);
       return { label: cov >= need ? 'Your reachable money covers the bridge' : 'Bridge shortfall', value: cov >= need ? `${formatDecimal(Math.round(cov * 10) / 10, 1)} years` : usd(pv - have), sub: `${formatDecimal(need, 1)} years from ${n(v, 'age')} to 59½.`,
         rows: [['Money you can reach', usd(have)], ['Bridge cost (today’s value)', usd(pv)], ['Years it covers', covered === null ? '100 or more' : formatDecimal(Math.round(covered * 10) / 10, 1)]] };
     },
