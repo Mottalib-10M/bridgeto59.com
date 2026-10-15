@@ -9,7 +9,7 @@ const lang = 'en';
     <h1>Cookies</h1>
     <p>This site sets no cookie and uses no local storage. The balances, ages and spending you type are computed inside the page and disappear when you close it, unless you copy a share link, which carries them in its address.</p>
     <h2>No banner, and why</h2>
-    <p>A consent banner is required when a site stores or reads non-essential information on a device. Nothing of the kind happens here. {CLARITY_ID ? 'The stability monitoring described in the privacy policy runs without cookies and stores nothing on your device.' : 'No analytics, advertising or social script is loaded.'}</p>
+    <p>A consent banner is required when a site stores or reads non-essential information on a device. Nothing of the kind happens here. {CLARITY_ID ? 'The stability monitoring described in the privacy policy, Microsoft Clarity in its cookie-free mode, sets no cookie and stores nothing on your device; you can block it by blocking clarity.ms.' : 'No analytics, advertising or social script is loaded.'}</p>
     <h2>How to check</h2>
     <p>Open your browser's developer tools (F12), tab Application or Storage: Cookies and Local Storage stay empty while you use the calculators. The Network tab shows that changing a field sends nothing anywhere.</p>
     <p>See also the <a href={route('privacy', lang)}>privacy policy</a>. Updated: {LAST_UPDATED}.</p>
